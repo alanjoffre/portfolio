@@ -1,8 +1,8 @@
-### Portfólio: Alan Joffre Macena de Araújo
+# Portfólio: Alan Joffre Macena de Araújo
 Desenvolvedor Python - Ciêntista de dados
 
-## Ciência de Dados
-# Projeto 1 - Black Friday
+# Ciência de Dados / Python-Flask / Python-Django
+## Ciencia de Dados: Projeto Black Friday
 - Importando os módulos
 - Carregando os dados
 - Visualização dos dados
@@ -37,10 +37,10 @@ Desenvolvedor Python - Ciêntista de dados
 
 
 
-## Python / Flask
+## Python-Flask
 
 
-## Python/ Django
+## Python-Django
 
 
 
