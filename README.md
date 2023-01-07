@@ -1,7 +1,7 @@
 # Portfólio: Alan Joffre Macena de Araújo
 Desenvolvedor Python - Ciêntista de dados
 
-#Ciêcia de Dados
+#Ciência de Dados
 
 Projeto 1 - Black Friday
 -Importando os módulos
