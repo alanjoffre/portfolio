@@ -146,7 +146,13 @@ Desenvolvedor Python - Ciêntista de Dados
 - Fazendo a persistência do modelo treinado para o disco.
 
 ### Python-Flask
-
+- Aplicação Web ToDo
+- Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
+- Instrução
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/toDo.png" width="100%">
+</p>
+<br>
 
 ### Python-Django
 
