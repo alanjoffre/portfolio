@@ -1,7 +1,7 @@
 # Portfólio: Alan Joffre
-Desenvolvedor Python - Ciêntista de Dados
-## Projetos: Ciência de Dados / Python-Flask / Python-Django
-### Ciência de Dados: Black Friday
+Desenvolvedor Python - Cientista de Dados
+# Projetos:
+## Ciência de Dados: Black Friday
 - Importando os módulos.
 - Carregando os dados.
 - Visualização dos dados.
@@ -35,7 +35,7 @@ Desenvolvedor Python - Ciêntista de Dados
 - E compraram mais produtos da categoria 1.
 - ***************************************************************************************************
 
-### Ciência de Dados: Google Play
+## Ciência de Dados: Google Play
 - Objetivo: Os dados dos aplicativos da Play Store têm um enorme potencial para levar as empresas que desenvolvem essas aplicações ao sucesso. O objetivo deste projeto é analisar esses dados com o intuito de ajudar os desenvolvedores a entender que tipo de aplicativo provavelmente atrairá mais usuários.
 
 - Importando os pacotes necessários.
@@ -93,7 +93,7 @@ Desenvolvedor Python - Ciêntista de Dados
 - Depois de toda essa análise podemos concluir que os aplicativos voltados para rede social e games são os que mais atraem os usuários, então um desenvolvedor pode usar essa análise como base para criar seu próximo aplicativo.
 
 - ***************************************************************************************************
-### Ciência de Dados: Dados do Censo
+## Ciência de Dados: Dados do Censo
 - Importando os módulos.
 - Carregando e visualizando os módulos.
 - Descrição das principais Features.
@@ -125,7 +125,8 @@ Desenvolvedor Python - Ciêntista de Dados
 - Treinando os modelos utilizando apenas as features selecionadas.
 - Avaliação dos modelos de Machine Learning.
 - Tunning dos modelos criados com Random Forest e DecisionTree.
-- Random Forest aprensentou a menor taxa de erro após a padronização dos dados (possibilidade de otimizá-lo).
+- Random Forest aprensentou a menor taxa de erro após a padronização dos dados.
+- Random Forest (possibilidade de otimização).
 - Definindo a escala.
 - Possíveis valores de estimators.
 - Possíveis valores para o critério de divisão.
@@ -148,13 +149,13 @@ Desenvolvedor Python - Ciêntista de Dados
 ### Python-Flask
 - Aplicação Web ToDo
 - Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
-- Instrução
+- Procedimento: instalação e configuração
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/toDo.png" width="100%">
 </p>
 <br>
 
-### Python-Django
+## Python-Django
 
 
 
