@@ -20,3 +20,4 @@ Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD
 
 - Para rodar o projeto, digite: flask run
 
+

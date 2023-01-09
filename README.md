@@ -147,14 +147,20 @@ Desenvolvedor Python - Cientista de Dados
 
 # Projeto: Python - Flask
 - Aplicação Web ToDo.
-- Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
-- Procedimento de instalação e configuração.
+- HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
+- Procedimento de instalação e configuração - arquivo README dentro do repositório do projeto.
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/toDo.png" width="100%">
 </p>
 <br>
 
 # Projeto: Python - Django
-
+- Django Inventory Management System Web Application
+- HTML | CSS | JavaScript | Bootstrap5 | Python | Django | SQLAlchemy | SQLite | CRUD |
+- Procedimento de instalação e configuração - arquivo README dentro do repositório do projeto.
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/ims.png" width="100%">
+</p>
+<br>
 
 
