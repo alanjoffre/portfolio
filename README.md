@@ -1,7 +1,6 @@
 # Portfólio: Alan Joffre
 Desenvolvedor Python - Cientista de Dados
-# Projetos:
-## Ciência de Dados: Black Friday
+# Projeto: Ciência de Dados - Black Friday
 - Importando os módulos.
 - Carregando os dados.
 - Visualização dos dados.
@@ -35,7 +34,7 @@ Desenvolvedor Python - Cientista de Dados
 - E compraram mais produtos da categoria 1.
 - ***************************************************************************************************
 
-## Ciência de Dados: Google Play
+# Projeto: Ciência de Dados - Google Play
 - Objetivo: Os dados dos aplicativos da Play Store têm um enorme potencial para levar as empresas que desenvolvem essas aplicações ao sucesso. O objetivo deste projeto é analisar esses dados com o intuito de ajudar os desenvolvedores a entender que tipo de aplicativo provavelmente atrairá mais usuários.
 
 - Importando os pacotes necessários.
@@ -93,7 +92,7 @@ Desenvolvedor Python - Cientista de Dados
 - Depois de toda essa análise podemos concluir que os aplicativos voltados para rede social e games são os que mais atraem os usuários, então um desenvolvedor pode usar essa análise como base para criar seu próximo aplicativo.
 
 - ***************************************************************************************************
-## Ciência de Dados: Dados do Censo
+# Projeto: Ciência de Dados - Censo
 - Importando os módulos.
 - Carregando e visualizando os módulos.
 - Descrição das principais Features.
@@ -146,7 +145,7 @@ Desenvolvedor Python - Cientista de Dados
 - Preparando a versão final do modelo.
 - Fazendo a persistência do modelo treinado para o disco.
 
-### Python-Flask
+# Projeto: Python - Flask
 - Aplicação Web ToDo
 - Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
 - Procedimento: instalação e configuração
@@ -155,7 +154,7 @@ Desenvolvedor Python - Cientista de Dados
 </p>
 <br>
 
-## Python-Django
+# Projeto: Python - Django
 
 
 
