@@ -146,9 +146,9 @@ Desenvolvedor Python - Cientista de Dados
 - Fazendo a persistência do modelo treinado para o disco.
 
 # Projeto: Python - Flask
-- Aplicação Web ToDo
+- Aplicação Web ToDo.
 - Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
-- Procedimento: instalação e configuração
+- Procedimento de instalação e configuração.
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/toDo.png" width="100%">
 </p>
