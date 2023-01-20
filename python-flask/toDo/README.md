@@ -1,4 +1,4 @@
-# Aplicação web ToDo
+# Aplicação web To Do List
 
 Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
 
