@@ -6,6 +6,7 @@ Com dois anos de experiência, focado em lidar com a complexidade dos negócios 
 - Instalação | Configuração => README
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/blackfriday.png" width="100%">
+  <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday">link</a> 
 </p>
 <br>
 
@@ -20,6 +21,13 @@ Com dois anos de experiência, focado em lidar com a complexidade dos negócios 
 - Instalação | Configuração => README
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/data-mining.png" width="100%">
+</p>
+<br>
+
+# Projeto: Ciência de Dados - Vinhos
+- Instalação | Configuração => README
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/vinhos.png" width="100%">
 </p>
 <br>
 
