@@ -23,7 +23,7 @@ Com dois anos de experiência, focado em lidar com a complexidade dos negócios 
 
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/wine-analysis"># Projeto: Ciência de Dados - Wine Analysis</a>
 <p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/vinhos.png" width="100%">
+  <img alt="mulheres-vozes-escuta" src="./assets/wine-analysis.png" width="100%">
 </p>
 <br>
 
