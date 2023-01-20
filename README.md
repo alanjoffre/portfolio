@@ -3,7 +3,6 @@ Desenvolvedor Python - Cientista de Dados<br><br>
 Com dois anos de experiência, focado em lidar com a complexidade dos negócios e entregar software de alta qualidade que seja escalável e resiliente.
 
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Ciência de Dados - Black Friday</a> 
-- Instalação | Configuração => README
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/blackfriday.png" width="100%">
 </p>
