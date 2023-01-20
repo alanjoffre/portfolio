@@ -18,7 +18,7 @@ Desenvolvedor Python - Cientista de Dados
 # Projeto: Ciência de Dados - Data Mining
 - Instalação | Configuração => README
 <p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/data-minig.png" width="100%">
+  <img alt="mulheres-vozes-escuta" src="./assets/data-mining.png" width="100%">
 </p>
 <br>
 
