@@ -1,7 +1,7 @@
-# Portfólio: Alan Joffre | Dev. Python | Cientista de Dados
-<br>
-Com dois anos de experiência, focado em lidar com a complexidade dos negócios e entregar software de alta qualidade que seja escalável e resiliente.
-<a id="inicio" href="https://alanjoffre.github.io/profile-project/">(... mais informações ...)</a> 
+<a id="inicio" href="https://alanjoffre.github.io/profile-project/"># Portfólio: Alan Joffre | Dev. Python | Cientista de Dados</a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/blackfriday.png" width="100%">
+</p>
 <br><br><br>
 
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Ciência de Dados - Black Friday</a> 
