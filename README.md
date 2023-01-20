@@ -19,9 +19,9 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/wine-analysis"># Projeto: Ciência de Dados - Wine Analysis</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/wine-quality"># Projeto: Ciência de Dados - Wine Analysis</a>
 <p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/wine-analysis.png" width="100%">
+  <img alt="mulheres-vozes-escuta" src="./assets/wine-quality.png" width="100%">
 </p>
 <br>
 
