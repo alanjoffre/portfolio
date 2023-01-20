@@ -36,7 +36,7 @@ simplefilter(action='ignore', category=FutureWarning)
 
 #df = pd.read_csv('D:/Ti/Cursos/Vscode/github/portfolio/ciencia-de-dados/minerando-dados/adult.data')
 df = pd.DataFrame()
-for chunk in pd.read_csv('D:/Ti/Cursos/Vscode/github/portfolio/ciencia-de-dados/minerando-dados/adult.data',na_values= '?', chunksize = 100000):
+for chunk in pd.read_csv('D:/Github/portfolio/ciencia-de-dados/minerando-dados/adult.data',na_values= '?', chunksize = 100000):
     df = pd.concat([df,chunk])
 
 df.head()
