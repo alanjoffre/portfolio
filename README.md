@@ -19,7 +19,7 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/wine-quality"># Project: Data Science | Wine Analysis</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/wine-quality"># Project: Data Science | Wine Quality</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/wine-quality.png" width="100%">
 </p>
