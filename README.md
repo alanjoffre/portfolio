@@ -1,5 +1,5 @@
 # Portfólio: Alan Joffre
-Desenvolvedor Python - Cientista de Dados
+Desenvolvedor Python - Cientista de Dados<br>
 Com dois anos de experiência, focado em lidar com a complexidade dos negócios e entregar software de alta qualidade que seja escalável e resiliente.
 
 # Projeto: Ciência de Dados - Black Friday
