@@ -25,15 +25,13 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-flask/to-do-list"># Projeto: Python - Flask - APP Web To Do List</a>
-- HTML | CSS | JavaScript | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-flask/to-do-list"># Projeto: Python | Flask | APP Web To Do List</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/to-do-list.png" width="100%">
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-django/inventory-management-system"># Projeto: Python - Django - Inventory Management System Web Application</a>
-- HTML | CSS | JavaScript | Bootstrap5 | Python | Django | SQLAlchemy | SQLite | CRUD |
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-django/inventory-management-system"># Projeto: Python | Django | Inventory Management System Web Application</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/ims.png" width="100%">
 </p>
