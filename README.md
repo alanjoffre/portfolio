@@ -25,7 +25,7 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-flask/toDo"># Projeto: Python - Flask</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-flask/to-do-list"># Projeto: Python - Flask</a>
 - Aplicação Web To Do List
 - HTML | CSS | JavaScript | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
 <p align="center">
