@@ -14,19 +14,19 @@ Com dois anos de experiência, focado em lidar com a complexidade dos negócios 
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/minerando-dados"># Projeto: Ciência de Dados - Data Mining</a> 
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/data-mining"># Projeto: Ciência de Dados - Data Mining</a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/data-mining.png" width="100%">
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Ciência de Dados - Vinhos</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/vinhos"># Projeto: Ciência de Dados - Vinhos</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/vinhos.png" width="100%">
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Python - Flask</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-flask/toDo"># Projeto: Python - Flask</a>
 - Aplicação Web To Do List
 - HTML | CSS | JavaScript | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
 <p align="center">
@@ -34,7 +34,7 @@ Com dois anos de experiência, focado em lidar com a complexidade dos negócios 
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Python - Django</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-django/inventory-management-system"># Projeto: Python - Django</a>
 - Django Inventory Management System Web Application
 - HTML | CSS | JavaScript | Bootstrap5 | Python | Django | SQLAlchemy | SQLite | CRUD |
 <p align="center">
