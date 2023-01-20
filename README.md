@@ -8,40 +8,35 @@ Com dois anos de experiência, focado em lidar com a complexidade dos negócios 
 </p>
 <br>
 
-# Projeto: Ciência de Dados - Play Store
-- Instalação | Configuração => README
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/google-play"># Projeto: Ciência de Dados - Play Store</a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/playstore.png" width="100%">
 </p>
 <br>
 
-# Projeto: Ciência de Dados - Data Mining
-- Instalação | Configuração => README
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/minerando-dados"># Projeto: Ciência de Dados - Data Mining</a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/data-mining.png" width="100%">
 </p>
 <br>
 
-# Projeto: Ciência de Dados - Vinhos
-- Instalação | Configuração => README
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Ciência de Dados - Vinhos</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/vinhos.png" width="100%">
 </p>
 <br>
 
-# Projeto: Python - Flask
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Python - Flask</a>
 - Aplicação Web To Do List
 - HTML | CSS | JavaScript | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
-- Instalação | Configuração => README
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/toDo.png" width="100%">
 </p>
 <br>
 
-# Projeto: Python - Django
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Projeto: Python - Django</a>
 - Django Inventory Management System Web Application
 - HTML | CSS | JavaScript | Bootstrap5 | Python | Django | SQLAlchemy | SQLite | CRUD |
-- Instalação | Configuração => README
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/ims.png" width="100%">
 </p>
