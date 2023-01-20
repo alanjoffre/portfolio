@@ -1,6 +1,6 @@
-# Aplicação web To Do List
+# To Do List Web Application
 
-Desenvolvido em: HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
+HTML | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
 
 # Instrução
 - Acesse o diretório do projeto através do Terminal/VSCODE.

@@ -31,7 +31,7 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-django/inventory-management-system"># Project: Python | Django | APP Inventory Management System</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-django/inventory-management-system"># Project: Python | Django | Inventory Management System Web Application</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/ims.png" width="100%">
 </p>

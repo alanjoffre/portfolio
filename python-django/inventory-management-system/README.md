@@ -1,6 +1,6 @@
-# Djnago Inventory Management System Web Application
+# Inventory Management System Web Application
 
-Desenvolvido em: HTML | CSS | JavaScript | Bootstrap5 | Python | Django | SQLAlchemy | SQLite | CRUD |
+HTML | CSS | JavaScript | Bootstrap5 | Python | Django | SQLAlchemy | SQLite | CRUD |
 
 # Instrução
 - Instale o django pelo terminal do VSCODE: pip install Django
