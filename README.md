@@ -24,7 +24,7 @@ Com dois anos de experiência, focado em lidar com a complexidade dos negócios 
 <br>
 
 # Projeto: Python - Flask
-- Aplicação Web ToDo.
+- Aplicação Web To Do List
 - HTML | CSS | JavaScript | Bootstrap5 | Python | Flask | SQLAlchemy | SQLite | CRUD |
 - Instalação | Configuração => README
 <p align="center">
