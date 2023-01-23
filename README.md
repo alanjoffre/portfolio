@@ -25,7 +25,7 @@
 </p>
 <br>
 
-<a id="inicio" href=""># Project: Data Science | Furniture Sale</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/furniture-sale"># Project: Data Science | Furniture Sale</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/furniture-sale.png" width="100%">
 </p>
