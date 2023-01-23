@@ -1,4 +1,4 @@
-# Projeto: Ciência de Dados - Furniture Sale
+# Projeto: Ciência de Dados - Venda de móveis
 
 - Importando os módulos.
 - Carregando os dados.
@@ -32,10 +32,11 @@
 
 - ***************************************************************************************************
 - Considerações:
-- As vendas de móveis e materiais de escritório têm aumentado linearmente ao longo do tempo e continuarão crescendo, embora o crescimento dos materiais de escritório pareça um pouco mais forte.
+- As vendas de móveis e materiais de escritório têm aumentado linearmente ao longo do tempo e continuarão crescendo
+- O crescimento dos materiais de escritório parece um pouco mais forte.
 - O pior mês para móveis é abril, o pior mês para material de escritório é fevereiro.
 - O melhor mês para móveis é dezembro e o melhor mês para materiais de escritório é outubro. 
-- Existem muitas análises de séries temporais que podemos explorar a partir de agora, como previsão com limites de incerteza, ponto de mudança e detecção de anomalias.
+- Podemos explorar a partir de agora, como previsão com limites de incerteza, ponto de mudança e detecção de anomalias.
 
 - ***************************************************************************************************
 
