@@ -25,6 +25,12 @@
 </p>
 <br>
 
+<a id="inicio" href=""># Project: Data Science | Furniture Sale</a>
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/furniture-sale.png" width="100%">
+</p>
+<br>
+
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-flask/to-do-list"># Project: Python | Flask | APP To Do List</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/to-do-list.png" width="100%">
