@@ -1,12 +1,6 @@
 <h3><a id="inicio" href="https://alanjoffre.github.io/profile-project/"># Portfolio: Alan Joffre | Dev. Python | Data Scientist</a></h3> 
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/exchange-rate-forecast"># Project: Data Science | Exchange Rate Forecast</a> 
-<p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/taxa-de-cambio.png" width="100%">
-</p>
-<br>
-
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Project: Data Science | Black Friday</a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/black-friday.png" width="100%">
@@ -34,6 +28,12 @@
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/furniture-sale"># Project: Data Science | Furniture Sale</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/furniture-sale.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/exchange-rate-forecast"># Project: Data Science | Exchange Rate Forecast</a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/taxa-de-cambio.png" width="100%">
 </p>
 <br>
 
