@@ -7,6 +7,12 @@
 </p>
 <br>
 
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Project: Data Science | Black Friday</a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/black-friday.png" width="100%">
+</p>
+<br>
+
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/google-play"># Project: Data Science | Play Store</a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/play-store.png" width="100%">

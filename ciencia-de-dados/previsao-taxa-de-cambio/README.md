@@ -1,0 +1,22 @@
+# Séries Temporais Univariadas - Previsão Taxa de Câmbio. 
+
+- Importando as bibliotecas.
+- importando a base de dados.
+- Considerações 1.
+- Criando variável.
+- Grapp: preço de fechamento e taxa de retorno juntos.
+- Total de retornos positivos e negativos durante o período.
+- Estatísticas básicas para retorno.
+- Detecção de anomalias e outliers.
+- Método Interquantil.
+- Anomalias de queda.
+- Considerações 2.
+- Considerações 3.
+- Pesquisa de grade para ARIMA.
+- Considerações 4.
+- O que os gráficos dizem sobre os resíduos.
+- Testando o modelo em dados reais.
+- Abordagens do modelo de negociação algorítmica.
+- Gerando sinais de compra e venda.
+- Gráfico: Comparação das taxas de câmbio reais e previstas.
+- Gráfico: Intervalo de confiança, valores reais e previstos.
