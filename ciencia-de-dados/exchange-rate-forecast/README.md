@@ -1,5 +1,6 @@
-# Séries Temporais Univariadas - Previsão Taxa de Câmbio. 
+# Aplicação para Séries Temporais Univariadas: Modelo Algorítmico de Negociação para Taxas de Câmbio 
 
+- Instalando bibliotecas.
 - Importando as bibliotecas.
 - importando a base de dados.
 - Considerações 1.
