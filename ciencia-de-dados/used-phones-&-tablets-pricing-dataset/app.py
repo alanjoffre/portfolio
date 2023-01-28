@@ -4,8 +4,8 @@ import numpy as np
 import requests
 
 app = Flask(__name__,static_folder='statics')
-model = pk.load(open('Price_Predictor.pkl','rb')) 
-scaler = pk.load(open('Scaler.pkl','rb'))
+model = pk.load(open('D:/Github/portfolio/ciencia-de-dados/used-phones-&-tablets-pricing-dataset/Price_Predictor.pkl','rb')) 
+scaler = pk.load(open('D:/Github/portfolio/ciencia-de-dados/used-phones-&-tablets-pricing-dataset/Scaler.pkl','rb'))
 
 @app.route('/',methods=['GET']) 
 def home(): 
