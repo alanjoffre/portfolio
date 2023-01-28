@@ -1,7 +1,7 @@
 <h3><a id="inicio" href="https://alanjoffre.github.io/profile-project/"># Portfolio: Alan Joffre | Dev. Python | Data Scientist</a></h3> 
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/black-friday"># Project: Data Science | Black Friday</a> 
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/used-phones-&-tablets-pricing-dataset"># Project: Data Science | Used Phones & tablets Pricing Dataset</a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/celular.png" width="100%">
 </p>
