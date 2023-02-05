@@ -19,12 +19,6 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/data-mining"># Project: Data Science | Data Mining</a> 
-<p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/data-mining.png" width="100%">
-</p>
-<br>
-
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/wine-quality"># Project: Data Science | Wine Quality</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/wine-quality.png" width="100%">
