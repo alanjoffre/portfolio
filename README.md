@@ -37,13 +37,13 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-flask/to-do-list"># Project: Python | Flask | APP To Do List</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/flask/to-do-list"># Project: Flask | APP To Do List</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/to-do-list.png" width="100%">
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/python-django/inventory-management-system"># Project: Python | Django | Inventory Management System Web Application</a>
+<a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/django/inventory-management-system"># Project: Django | Inventory Management System Web Application</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/ims.png" width="100%">
 </p>
