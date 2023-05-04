@@ -37,7 +37,7 @@
 </p>
 <br>
 
-<a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiNWUyMDY4OGItMmMzMC00YmJkLTgxOTUtZTcwYzRmNTNhN2Q1IiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Project: Power BI | Análise de Pessoas (RH)</a> 
+<a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiNWUyMDY4OGItMmMzMC00YmJkLTgxOTUtZTcwYzRmNTNhN2Q1IiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Project: Power BI | People Analysis</a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/analise-pessoas.png" width="100%">
 </p>
