@@ -38,12 +38,10 @@
 <br>
 
 <a id="inicio" href="https://github.com/alanjoffre/powerbi/tree/master/curso-completo/analise-estoque"># Project: Power BI | Análise de Estoque</a> 
-<iframe title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjYzZjI2Y2MtNjNmZC00YzM5LWJmZDItYmZjYzliZTQ0Mjg2IiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9" frameborder="0" allowFullScreen="true"></iframe>
+<p align="center">
+  <iframe title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjYzZjI2Y2MtNjNmZC00YzM5LWJmZDItYmZjYzliZTQ0Mjg2IiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9" frameborder="0" allowFullScreen="true"></iframe>
+</p>
 <br>
-
-
-
-
 
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/flask/to-do-list"># Project: Flask | APP To Do List</a>
 <p align="center">
