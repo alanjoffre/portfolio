@@ -37,6 +37,12 @@
 </p>
 <br>
 
+<a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiNWUyMDY4OGItMmMzMC00YmJkLTgxOTUtZTcwYzRmNTNhN2Q1IiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Project: Power BI | Análise de Pessoal (RH)</a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/analise-pessoal.png" width="100%">
+</p>
+<br>
+
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/flask/to-do-list"># Project: Flask | APP To Do List</a>
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/to-do-list.png" width="100%">
