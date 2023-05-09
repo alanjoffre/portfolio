@@ -1,4 +1,4 @@
-<h3><a id="inicio" href="https://alanjoffre.github.io/my-profile/"># Portfolio: Alan Joffre | Dev. Python | Data Scientist</a></h3> 
+<h3><a id="inicio" href="https://alanjoffre.github.io/my-profile/"># Portfolio: Alan Joffre | Data Science | Power BI | Python</a></h3> 
 <br>
 
 <a id="inicio" href="https://github.com/alanjoffre/portfolio/tree/master/ciencia-de-dados/used-phones-&-tablets-pricing-dataset"># Project: Data Science | Used Phones & tablets Pricing Dataset</a> 
@@ -37,9 +37,16 @@
 </p>
 <br>
 
-<a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiZDg2NGExN2ItYzVjMS00NzY4LWE0Y2QtOGQ3Njc4NjUwOGUxIiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Project: Power BI | Power BI - Inventory Analysis </a> 
+<a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiZDg2NGExN2ItYzVjMS00NzY4LWE0Y2QtOGQ3Njc4NjUwOGUxIiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Project: Power BI - Inventory Analysis </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/analise-estoque.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href=""># Project: Power BI - Employee Analytics </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/analise-colaboradores1.png" width="100%">
+  <img alt="mulheres-vozes-escuta" src="./assets/analise-colaboradores2.png" width="100%">
 </p>
 <br>
 
