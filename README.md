@@ -37,9 +37,9 @@
 </p>
 <br>
 
-<a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiNWUyMDY4OGItMmMzMC00YmJkLTgxOTUtZTcwYzRmNTNhN2Q1IiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Project: Power BI | Personnel Analysis</a> 
+<a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiZDg2NGExN2ItYzVjMS00NzY4LWE0Y2QtOGQ3Njc4NjUwOGUxIiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Project: Power BI | Power BI - Inventory Analysis </a> 
 <p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/analise-pessoal.png" width="100%">
+  <img alt="mulheres-vozes-escuta" src="./assets/analise-estoque.png" width="100%">
 </p>
 <br>
 
