@@ -7,7 +7,7 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/3.Franquia"># Projeto: Ciência de Dados - Prevendo custos para abrir Franquia - Regressão. </a> 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/3.Franquia"># Projeto: Ciência de Dados - Prevendo custos para abrir Franquia - Regressão Linear. </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/franquia.png" width="100%">
 </p>
