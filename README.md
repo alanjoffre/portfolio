@@ -25,6 +25,54 @@
 </p>
 <br>
 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/6.FalhaEquipamento"># Projeto: Ciência de Dados - Avaliando a probabilidade de quebra de equipamentos - Dist. Poisson. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/falha-manutencao.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/6.FalhaEquipamento"># Projeto: Ciência de Dados - Avaliando a probabilidade de quebra de equipamentos - Dist. Poisson. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/falha-manutencao.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/7.Normalidades"># Projeto: Ciência de Dados - Avaliando a normalidade de dados - Dist. Normal - Visualização - EDA. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/normalidade-dados.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/7.Normalidades"># Projeto: Ciência de Dados - Criando um sistema de recomendação - Machine Learning - Regras Associação. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/sistema-recomendacao.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/8.Recomendacao"># Projeto: Ciência de Dados - Fazendo um benchmark visual de previsão de produção - Séries Temporais. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/benchmark-visual.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/10.Exploratoria"># Projeto: Ciência de Dados - Analisando dados públicos de despesas - Análise Exploratória de Dados. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/analise-dados-publicos.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/11.OtimizaCarga"># Projeto: Ciência de Dados - Otimização de lucro no transporte de cargas - Algoritmos Genéticos. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/otimiza-cargas.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/12.Generativa"># Projeto: Ciência de Dados - Geração de imagens para empresa de marketing - IA Generativa. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/geracao-imagens.png" width="100%">
+</p>
+<br>
+
 <a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiZDg2NGExN2ItYzVjMS00NzY4LWE0Y2QtOGQ3Njc4NjUwOGUxIiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Projeto: Power BI - Análise de Estoque </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/analise-estoque.png" width="100%">
