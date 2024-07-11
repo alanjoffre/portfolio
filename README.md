@@ -37,13 +37,13 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/7.Normalidades"># Projeto: Ciência de Dados - Criando um sistema de recomendação - Machine Learning - Regras Associação. </a> 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/8.Recomendacao"># Projeto: Ciência de Dados - Criando um sistema de recomendação - Machine Learning - Regras Associação. </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/sistema-recomendacao.png" width="100%">
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/8.Recomendacao"># Projeto: Ciência de Dados - Fazendo um benchmark visual de previsão de produção - Séries Temporais. </a> 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/9.BenchmarkST"># Projeto: Ciência de Dados - Fazendo um benchmark visual de previsão de produção - Séries Temporais. </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/benchmark-visual.png" width="100%">
 </p>
