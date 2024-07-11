@@ -31,12 +31,6 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/6.FalhaEquipamento"># Projeto: Ciência de Dados - Avaliando a probabilidade de quebra de equipamentos - Dist. Poisson. </a> 
-<p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/falha-manutencao.png" width="100%">
-</p>
-<br>
-
 <a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/7.Normalidades"># Projeto: Ciência de Dados - Avaliando a normalidade de dados - Dist. Normal - Visualização - EDA. </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/normalidade-dados.png" width="100%">
@@ -70,6 +64,12 @@
 <a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/12.Generativa"># Projeto: Ciência de Dados - Geração de imagens para empresa de marketing - IA Generativa. </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/geracao-imagens.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/13.Acoes"># Projeto: Ciência de Dados - Dashboard para monitoramento da Bolsa de Valores - Visualização de Dados. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/bolsa-valores.png" width="100%">
 </p>
 <br>
 
