@@ -73,7 +73,7 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/14.Appcompleta"># Projeto: Ciência de Dados - App completa com multiplas páginas e publicação na internet. Streamlit + Inteligencia Artificial. </a> 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/14.Appcompleta"># Projeto: Ciência de Dados -App completa com multiplas páginas e publicação na internet. Streamlit + IA. </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/streamlit.png" width="100%">
 </p>
