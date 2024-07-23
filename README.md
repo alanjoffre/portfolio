@@ -73,6 +73,12 @@
 </p>
 <br>
 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/14.Appcompleta"># Projeto: Ciência de Dados - Aplicacao completa com multiplas páginas e publicação na internet. Streamlit + Inteligencia Artificial. </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/streamlit.png" width="100%">
+</p>
+<br>
+
 <a id="inicio" href="https://app.powerbi.com/view?r=eyJrIjoiZDg2NGExN2ItYzVjMS00NzY4LWE0Y2QtOGQ3Njc4NjUwOGUxIiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9"># Projeto: Power BI - Análise de Estoque </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/analise-estoque.png" width="100%">
