@@ -19,7 +19,7 @@
 </p>
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/5.Proleite"># Projeto: Ciência de Dados - Prevendo a producação de leite - Séries Temporais / Previsão / Decomposição. </a> 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/5.Proleite"># Projeto: Ciência de Dados - Prevendo a produção de leite - Séries Temporais / Previsão / Decomposição. </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/producao-leite.png" width="100%">
 </p>
