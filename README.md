@@ -1,4 +1,4 @@
-<h3><a id="inicio" href="https://alanjoffre.github.io/my-profile/"># Portfolio: Alan Joffre | Ciência de Dados | Engenharia de Dados | Python | Java |</a></h3> 
+<h3><a id="inicio" href="https://alanjoffre.github.io/my-profile/"># Portfolio: Alan Joffre | Ciência de Dados | Engenharia de Dados | Python |</a></h3> 
 <br>
 
 <a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/ciencia-de-dados-completo-real-2024"># Projeto: Ciência de Dados - Análise de Crédito </a> 
