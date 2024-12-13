@@ -3,7 +3,7 @@
 
 <a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/segmentacao_de_clientes_clustering"># Projeto: Ciência de Dados - Segmentação de Clientes - Clustering </a> 
 <p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/segmentacao_de_clientes.png" width="100%">
+  <img alt="mulheres-vozes-escuta" src="./assets/segmentacao_clientes.png" width="100%">
 </p>
 <br>
 
