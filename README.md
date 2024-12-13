@@ -1,15 +1,21 @@
 <h3><a id="inicio" href="https://alanjoffre.github.io/my-profile/"># Portfolio: Alan Joffre | Ciência de Dados | Engenharia de Dados | Python |</a></h3> 
 <br>
 
-<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/rotatividade-de-clientes"># Projeto: Ciência de Dados - Rotatividade de Clientes </a> 
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/segmentacao_de_clientes_clustering"># Projeto: Ciência de Dados - Segmentação de Clientes - Clustering </a> 
 <p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/rotatividade-de-clientes.png" width="100%">
+  <img alt="mulheres-vozes-escuta" src="./assets/segmentacao_de_clientes.png" width="100%">
 </p>
 <br>
 
 <a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/analise-de-sentimentos"># Projeto: Ciência de Dados - Analise de Sentimentos X </a> 
 <p align="center">
   <img alt="mulheres-vozes-escuta" src="./assets/analise-sentimento.png" width="100%">
+</p>
+<br>
+
+<a id="inicio" href="https://github.com/alanjoffre/data-science/tree/master/projetos/rotatividade-de-clientes"># Projeto: Ciência de Dados - Rotatividade de Clientes </a> 
+<p align="center">
+  <img alt="mulheres-vozes-escuta" src="./assets/rotatividade-de-clientes.png" width="100%">
 </p>
 <br>
 
