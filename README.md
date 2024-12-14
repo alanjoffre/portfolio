@@ -7,7 +7,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Segmentação de Clientes - Clustering](https://github.com/alanjoffre/data-science/tree/master/projetos/segmentacao_de_clientes_clustering)
+#### [Segmentação de Clientes - KMeans | Spark | Kafka](https://github.com/alanjoffre/data-science/tree/master/projetos/segmentacao_de_clientes_clustering)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/segmentacao_clientes.png" width="75%">
 </p>
