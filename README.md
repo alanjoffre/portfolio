@@ -1,11 +1,17 @@
 # Portfólio: Alan Joffre
 
-## Ciência de Dados | Engenharia de Dados | Python
+## Ciência de Dados | Engenharia de Dados |
 
 ### Sobre Mim
 Sou um cientista de dados e engenheiro de dados apaixonado por resolver problemas complexos e transformar dados em insights acionáveis. Tenho experiência em diversas ferramentas e tecnologias de ciência de dados e gosto de explorar novas abordagens para obter os melhores resultados.
 
 ### Projetos
+
+#### [Detectação de Fraude em Cartão de Credito - Random Forest | Flask | Spark | Kafka](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection)
+<p align="center">
+  <img alt="Segmentação de Clientes" src="./assets/creditcard.jpg" width="75%">
+</p>
+- **Descrição**: Projeto de detecção de fraudes em transações de cartões de crédito utilizando o algoritmo Random Forest. O objetivo é identificar e prever diferentes tipos de atividades fraudulentas em operações financeiras, melhorando a segurança e a confiabilidade do sistema de pagamentos.
 
 #### [Segmentação de Clientes - KMeans | Spark | Kafka](https://github.com/alanjoffre/data-science/tree/master/projetos/segmentacao_de_clientes_clustering)
 <p align="center">
