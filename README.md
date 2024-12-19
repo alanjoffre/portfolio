@@ -7,6 +7,12 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
+#### [Previsão de Mercado de Ações - Spark | LSTM](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes)
+<p align="center">
+  <img alt="Segmentação de Clientes" src="./assets/previsao_acoes.jpg" width="75%">
+</p>
+- **Descrição**: Projeto de previsão do mercado de ações utilizando Spark e redes neurais LSTM. O objetivo é prever os preços futuros das ações com base em dados históricos, auxiliando investidores a tomarem decisões mais informadas e estratégicas. 
+
 #### [Detectação de Fraude em Cartão de Credito - Random Forest | Flask | Spark | Kafka](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/creditcard.jpg" width="75%">
