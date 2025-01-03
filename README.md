@@ -7,11 +7,11 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Previsão de Mercado de Ações - Spark | LSTM](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes)
+#### [Projeto - Prev. do mercado de câmbio entre o dólar e o real: Yfinance | Random Forest](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/previsao_acoes.jpg" width="75%">
 </p>
-- **Descrição**: Projeto de previsão do mercado de ações utilizando Spark e redes neurais LSTM. O objetivo é prever os preços futuros das ações com base em dados históricos, auxiliando investidores a tomarem decisões mais informadas e estratégicas. 
+- **Este projeto tem como objetivo a previsão do mercado de câmbio entre o dólar e o real utilizando diferentes técnicas de machine learning, como Regressão Linear, Random Forest, XGBoost, Redes Neurais e LSTM. A previsão é realizada utilizando dados históricos coletados através do Yahoo Finance, com diversas etapas de processamento, treinamento de modelos e avaliação de desempenho. 
 
 #### [Detectação de Fraude em Cartão de Credito - Random Forest | Flask | Spark | Kafka](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection)
 <p align="center">
