@@ -7,6 +7,12 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
+#### [Projeto de Análise de Dados para Logística e Transporte - Varios casos envolvendo: Machine Learning e Redes Neurias](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte)
+<p align="center">
+  <img alt="Segmentação de Clientes" src="./assets/logistica_transporte.jpeg" width="75%">
+</p>
+- **Este projeto tem como objetivo analisar dados de viagens de uma empresa de transporte e logística para otimizar operações e melhorar a eficiência. Utilizando técnicas de Machine Learning e análises de dados, buscamos insights valiosos para diversas áreas, como previsão de gorjeta, comportamento de compartilhamento de viagem, desempenho de viagens agrupadas, detecção de anomalias em tarifas, análise geoespacial, modelagem de receita, eficácia das cobranças adicionais, otimização de rotas, gerenciamento de frota, análise de demanda, eficiência operacional, planejamento urbano e análise de custos. 
+
 #### [Projeto - Prev. do mercado de câmbio entre o dólar e o real: Yfinance | Random Forest](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/previsao_acoes.jpg" width="75%">
