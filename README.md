@@ -7,7 +7,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Projeto de Análise de Dados para Logística e Transporte - Varios casos envolvendo: Machine Learning e Redes Neurias](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte)
+#### [Projeto: Logística e Transporte - Varios casos envolvendo: Machine Learning e Redes Neurias](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/logistica_transporte.jpeg" width="75%">
 </p>
