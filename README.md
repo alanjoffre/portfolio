@@ -7,7 +7,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Projeto de Reconhecimento Óptico de Caracteres (OCR) com Tesseract](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_optico_de_caracteres_tesseract)
+#### [Projeto: Reconhecimento Óptico de Caracteres (OCR) com Tesseract.](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_optico_de_caracteres_tesseract)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/ocr-tesseract.jpg" width="75%">
 </p>
