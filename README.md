@@ -7,19 +7,19 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Projeto: Reconhecimento Óptico de Caracteres (OCR) com Tesseract.](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_optico_de_caracteres_tesseract)
+#### [Reconhecimento Óptico de Caracteres (OCR) com Tesseract.](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_optico_de_caracteres_tesseract)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/ocr-tesseract.jpg" width="75%">
 </p>
 - **Este projeto visa realizar o reconhecimento óptico de caracteres (OCR) em imagens usando a ferramenta Tesseract. O OCR é realizado em imagens de texto e os resultados são extraídos e salvos em arquivos de texto e banco de dados.
 
-#### [Projeto: Logística e Transporte - 13 cenários aplicando modelos de Machine Learning e Redes Neurais.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte)
+#### [Logística e Transporte - 13 cenários aplicando modelos de Machine Learning e Redes Neurais.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/logistica_transporte.jpeg" width="75%">
 </p>
 - **Este projeto tem como objetivo analisar dados de viagens de uma empresa de transporte e logística para otimizar operações e melhorar a eficiência. Utilizando técnicas de Machine Learning e análises de dados, buscamos insights valiosos para diversas áreas, como previsão de gorjeta, comportamento de compartilhamento de viagem, desempenho de viagens agrupadas, detecção de anomalias em tarifas, análise geoespacial, modelagem de receita, eficácia das cobranças adicionais, otimização de rotas, gerenciamento de frota, análise de demanda, eficiência operacional, planejamento urbano e análise de custos. 
 
-#### [Projeto - Prev. do mercado de câmbio entre o dólar e o real: Yfinance | Random Forest](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes)
+#### [Prev. do mercado de câmbio entre o dólar e o real: Yfinance | Random Forest](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/previsao_acoes.jpg" width="75%">
 </p>
