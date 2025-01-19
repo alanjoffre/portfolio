@@ -7,6 +7,12 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
+#### [Reconhecimento Facial e Detecção de Objetos.](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_facial_e_deteccao_de_objetos)
+<p align="center">
+  <img alt="Segmentação de Clientes" src="./assets/reconhecimento_facial_e_deteccao_de_objetos.jpg" width="75%">
+</p>
+- **Este projeto é uma solução avançada que integra reconhecimento facial, detecção de objetos e funcionalidades de monitoramento em tempo real. Ele utiliza tecnologias de aprendizado de máquina, visão computacional e desenvolvimento web para criar um sistema robusto e escalável.
+
 #### [Reconhecimento Óptico de Caracteres (OCR) com Tesseract.](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_optico_de_caracteres_tesseract)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/ocr-tesseract.jpg" width="75%">
