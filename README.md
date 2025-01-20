@@ -19,7 +19,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 </p>
 - **Este projeto visa realizar o reconhecimento óptico de caracteres (OCR) em imagens usando a ferramenta Tesseract. O OCR é realizado em imagens de texto e os resultados são extraídos e salvos em arquivos de texto e banco de dados.
 
-#### [Logística e Transporte - 13 cenários aplicando modelos de Machine Learning e Redes Neurais.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte)
+#### [Logística e Transporte - 13 cenários comn Machine Learning e Redes Neurais.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/logistica_transporte.jpeg" width="75%">
 </p>
