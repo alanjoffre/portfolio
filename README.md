@@ -1,6 +1,6 @@
 # Portfólio: Alan Joffre
 
-## Ciência de Dados | Engenharia de Dados |
+## Ciência de Dados | Engenharia de Dados | Analista de Dados |
 
 ### Sobre Mim
 Sou um cientista de dados e engenheiro de dados apaixonado por resolver problemas complexos e transformar dados em insights acionáveis. Tenho experiência em diversas ferramentas e tecnologias de ciência de dados e gosto de explorar novas abordagens para obter os melhores resultados.
