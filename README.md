@@ -7,7 +7,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Logistica | Transporte: Analise de Desempenho de Viagens Agrupadas - Utilizando Clusterização de Séries Temporais.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/3_analise_desempenho_viagens_agrupadas_clusterizacao_series_temporais)
+#### [Logistica | Transporte: Desempenho de Viagens Agrupadas - Clusterização de Séries Temporais.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/3_analise_desempenho_viagens_agrupadas_clusterizacao_series_temporais)
 <p align="center">
   <img alt="Compartilhamento de Viagem" src="./assets/viagem_agrupadas.jpeg" width="75%">
 </p>
