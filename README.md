@@ -15,7 +15,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 #### [Logistica | Transporte: Previsão de gorjeta - Utilizando Regressão.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/1_previsao_gorjeta_regressao)
 <p align="center">
-  <img alt="Previsão de gorjeta" src="./assets/analise_gorjeta.jpg" width="75%">
+  <img alt="Previsão de gorjeta" src="./assets/analise_gorjeta.jpeg" width="75%">
 </p>
 - **Projeto de análise de gorjetas com regressão e machine learning, com pipelines otimizados e arquitetura escalável para prever comportamento do cliente e oferecer insights em tempo real, identificando tendência.
 
