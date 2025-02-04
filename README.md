@@ -7,6 +7,12 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
+#### [Logistica | Transporte: Analise de Desempenho de Viagens Agrupadas - Utilizando Clusterização de Séries Temporais.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/3_analise_desempenho_viagens_agrupadas_clusterizacao_series_temporais)
+<p align="center">
+  <img alt="Compartilhamento de Viagem" src="./assets/viagem_agrupadas.jpeg" width="75%">
+</p>
+- **Este projeto implementa um pipeline completo para análise de desempenho de viagens agrupadas, utilizando técnicas avançadas de pré-processamento, engenharia de features, segmentação com janelas sobrepostas, normalização e clusterização de séries temporais. O pipeline também inclui a otimização dos hiperparâmetros via Optuna e a comparação com modelos alternativos (K-Shape e DBSCAN), registrando todos os resultados e parâmetros no MLflow.
+
 #### [Logistica | Transporte: Analise de Compartilhamento de Viagem - Utilizando Classificação.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/2_analise_compartilhamento_de_viagem_classificacao)
 <p align="center">
   <img alt="Compartilhamento de Viagem" src="./assets/compartilhamento_viagens.jpg" width="75%">
