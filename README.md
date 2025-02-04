@@ -7,6 +7,18 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
+#### [Logistica | Transporte: Analise de Compartilhamento de Viagem - Utilizando Classificação.]()
+<p align="center">
+  <img alt="Compartilhamento de Viagem" src="./assets/compartilhamento_viagens.jpg" width="75%">
+</p>
+- **Projeto de análise de compartilhamento de viagens com classificação, utilizando machine learning, pipelines otimizados e arquitetura escalável para identificar padrões e prever comportamentos dos usuários.
+
+#### [Logistica | Transporte: Previsão de gorjeta - Utilizando Regressão.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/1_previsao_gorjeta_regressao)
+<p align="center">
+  <img alt="Previsão de gorjeta" src="./assets/analise_gorjeta.jpg" width="75%">
+</p>
+- **Projeto de análise de gorjetas com regressão e machine learning, com pipelines otimizados e arquitetura escalável para prever comportamento do cliente e oferecer insights em tempo real, identificando tendência.
+
 #### [Reconhecimento Facial e Detecção de Objetos.](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_facial_e_deteccao_de_objetos)
 <p align="center">
   <img alt="Segmentação de Clientes" src="./assets/reconhecimento_facial_e_deteccao_de_objetos.jpg" width="75%">
