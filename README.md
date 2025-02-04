@@ -7,7 +7,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Logistica | Transporte: Analise de Compartilhamento de Viagem - Utilizando Classificação.]()
+#### [Logistica | Transporte: Analise de Compartilhamento de Viagem - Utilizando Classificação.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/2_analise_compartilhamento_de_viagem_classificacao)
 <p align="center">
   <img alt="Compartilhamento de Viagem" src="./assets/compartilhamento_viagens.jpg" width="75%">
 </p>
