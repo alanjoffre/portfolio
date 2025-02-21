@@ -7,7 +7,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 ### Projetos
 
-#### [Logistica | Transporte: Detecção de Anomalias em Tarifas de Compartilhamento de Viagem..](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas)
+#### [Logistica | Transporte: Detecção de Anomalias em Tarifas de Compartilhamento de Viagem.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas)
 <p align="center">
   <img alt="Compartilhamento de Viagem" src="./assets/deteccao-anomalias.png" width="75%">
 </p>
