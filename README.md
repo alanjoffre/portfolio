@@ -1,9 +1,9 @@
 # Portfólio: Alan Joffre
 
-## Ciência de Dados | Engenharia de Dados | Analista de Dados |
+## Cientista de Dados. 
 
 ### Sobre Mim
-Sou um cientista de dados e engenheiro de dados apaixonado por resolver problemas complexos e transformar dados em insights acionáveis. Tenho experiência em diversas ferramentas e tecnologias de ciência de dados e gosto de explorar novas abordagens para obter os melhores resultados.
+Cientista de Dados, especialista em modelagem preditiva, machine learning e visão computacional. Experiência comprovada na entrega de projetos de classificação, regressão, clusterização e análise de séries temporais, com ênfase em soluções interpretáveis e orientadas a negócio.
 
 ### Projetos
 
@@ -27,7 +27,7 @@ Sou um cientista de dados e engenheiro de dados apaixonado por resolver problema
 
 #### [Logistica | Transporte: Previsão de gorjeta - Utilizando Regressão.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/1_previsao_gorjeta_regressao)
 <p align="center">
-  <img alt="Previsão de gorjeta" src="./assets/analise_gorjeta.jpeg" width="75%">
+  <img alt="ompartilhamento de Viagem" src="./assets/analise_gorjeta.jpeg" width="75%">
 </p>
 - **Projeto de análise de gorjetas com regressão e machine learning, com pipelines otimizados e arquitetura escalável para prever comportamento do cliente e oferecer insights em tempo real, identificando tendência.
 
