@@ -1,6 +1,6 @@
 # Portfólio: Alan Joffre
 
-## Cientista de Dados. 
+## Cientista de Dados | Especialista em Modelagem Preditiva, Machine Learning e Visão Computacional | Python, XGBoost, Explainable AI
 
 ### Sobre Mim
 Cientista de Dados, especialista em modelagem preditiva, machine learning e visão computacional. Experiência comprovada na entrega de projetos de classificação, regressão, clusterização e análise de séries temporais, com ênfase em soluções interpretáveis e orientadas a negócio.
