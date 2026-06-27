@@ -28,7 +28,8 @@ flowchart LR
 ```
 
 `dlt` (EL) → `dbt` (Medallion, model contracts, Semantic Layer, dbt Mesh) → `Apache Airflow` + Astronomer Cosmos → Data Quality (`Soda`) → observabilidade/lineage (`OpenLineage`) → BI (`Evidence.dev`) → CI/CD + IaC (`Terraform`). Dev 100% em DuckDB; prod em Databricks (Unity Catalog + Delta).
-&nbsp;➡️ **[Ver repositório](https://github.com/alanjoffre/toll-analytics-platform)**
+
+➡️ **[Ver repositório](https://github.com/alanjoffre/toll-analytics-platform)** &nbsp;·&nbsp; **[▶ Dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)**
 
 #### 🤖 Aira — Plataforma SaaS de IA (em produção na AWS)
 Engenharia de dados/backend de ponta a ponta: backend assíncrono **Python/FastAPI**, **PostgreSQL** multi-organização (migração em produção sem perda), integração **LLM (Anthropic Claude)** com controle de custo, **CI/CD** com testes contra Postgres e SAST, e segurança/governança (CSP, masking de PII, auditoria hash-chain).
