@@ -1,11 +1,27 @@
 # Portfólio: Alan Joffre
 
-## Cientista de Dados | Especialista em Modelagem Preditiva, Machine Learning e Visão Computacional | Python, XGBoost, Explainable AI
+## Data Engineer · Analytics Engineer
+**Lakehouse · dbt · Databricks · Delta Lake · Unity Catalog · Airflow · PySpark · AWS/Azure · SQL · Python · ELT · Data Quality**
 
 ### Sobre Mim
-Cientista de Dados, especialista em modelagem preditiva, machine learning e visão computacional. Experiência comprovada na entrega de projetos de classificação, regressão, clusterização e análise de séries temporais, com ênfase em soluções interpretáveis e orientadas a negócio.
+Engenheiro de Dados / Analytics Engineer com foco em **produtos de dados end-to-end** — da arquitetura **lakehouse** (Medallion, Databricks, Delta Lake) à entrega de análises prontas para decisão corporativa, com orquestração (Airflow), Data Quality, lineage e governança ponta a ponta. Mantenho também uma base sólida em **Machine Learning aplicado** (a galeria abaixo reúne projetos de classificação, regressão, séries temporais, NLP e visão computacional).
 
-### Projetos
+🔗 [LinkedIn](https://linkedin.com/in/alanjoffre) · [GitHub](https://github.com/alanjoffre) · [Página pessoal](https://alanjoffre.github.io/my-profile/)
+
+---
+
+### 🏗️ Engenharia de Dados em destaque
+
+#### [toll-analytics-platform — Plataforma de dados end-to-end (Open Source)](https://github.com/alanjoffre/toll-analytics-platform)
+Plataforma de dados **open-source ponta a ponta** que espelha em OSS a arquitetura aplicada em produção:
+`dlt` (EL) → `dbt` (Medallion, model contracts, Semantic Layer, dbt Mesh) → `Apache Airflow` + Astronomer Cosmos → Data Quality (`Soda`) → observabilidade/lineage (`OpenLineage`) → BI (`Evidence.dev`) → CI/CD + IaC (`Terraform`). Dashboard e lineage ao vivo no GitHub Pages.
+
+#### Aira — Plataforma SaaS de IA (em produção na AWS)
+Engenharia de dados/backend de ponta a ponta: backend assíncrono **Python/FastAPI**, **PostgreSQL** multi-organização (migração em produção sem perda), integração **LLM (Anthropic Claude)** com controle de custo, **CI/CD** com testes contra Postgres e SAST, e segurança/governança (CSP, masking de PII, auditoria hash-chain).
+
+---
+
+### 📊 Machine Learning & Ciência de Dados
 
 #### [Logistica | Transporte: Detecção de Anomalias em Tarifas de Compartilhamento de Viagem.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas)
 <p align="center">
@@ -159,4 +175,4 @@ Cientista de Dados, especialista em modelagem preditiva, machine learning e vis�
 
 ---
 
-<p align="center">&copy; 2024 Alan Joffre. Todos os direitos reservados.</p>
+<p align="center">&copy; 2026 Alan Joffre · Data Engineer / Analytics Engineer</p>
