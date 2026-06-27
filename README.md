@@ -12,16 +12,36 @@ Engenheiro de Dados / Analytics Engineer com foco em **produtos de dados end-to-
 
 ### 🏗️ Engenharia de Dados em destaque
 
-#### [toll-analytics-platform — Plataforma de dados end-to-end (Open Source)](https://github.com/alanjoffre/toll-analytics-platform)
+#### [🏗️ toll-analytics-platform — Plataforma de dados end-to-end (Open Source)](https://github.com/alanjoffre/toll-analytics-platform)
 Plataforma de dados **open-source ponta a ponta** que espelha em OSS a arquitetura aplicada em produção:
-`dlt` (EL) → `dbt` (Medallion, model contracts, Semantic Layer, dbt Mesh) → `Apache Airflow` + Astronomer Cosmos → Data Quality (`Soda`) → observabilidade/lineage (`OpenLineage`) → BI (`Evidence.dev`) → CI/CD + IaC (`Terraform`). Dashboard e lineage ao vivo no GitHub Pages.
 
-#### Aira — Plataforma SaaS de IA (em produção na AWS)
+```mermaid
+flowchart LR
+  SRC["CSV / Eventos"] --> ING["dlt (EL)"]
+  ING --> LAND[("landing<br/>DuckDB dev · Databricks prod")]
+  LAND --> T["dbt<br/>Medallion · contracts · Semantic Layer · Mesh"]
+  T --> DQ["Data Quality<br/>Soda · Elementary"]
+  T --> BI["BI<br/>Evidence.dev"]
+  ORCH["Airflow + Cosmos"] -.->|orquestra| ING
+  ORCH -.->|orquestra| T
+  OBS["OpenLineage · Prometheus/Grafana"] -.->|observa| ORCH
+```
+
+`dlt` (EL) → `dbt` (Medallion, model contracts, Semantic Layer, dbt Mesh) → `Apache Airflow` + Astronomer Cosmos → Data Quality (`Soda`) → observabilidade/lineage (`OpenLineage`) → BI (`Evidence.dev`) → CI/CD + IaC (`Terraform`). Dev 100% em DuckDB; prod em Databricks (Unity Catalog + Delta).
+&nbsp;➡️ **[Ver repositório](https://github.com/alanjoffre/toll-analytics-platform)**
+
+#### 🤖 Aira — Plataforma SaaS de IA (em produção na AWS)
 Engenharia de dados/backend de ponta a ponta: backend assíncrono **Python/FastAPI**, **PostgreSQL** multi-organização (migração em produção sem perda), integração **LLM (Anthropic Claude)** com controle de custo, **CI/CD** com testes contra Postgres e SAST, e segurança/governança (CSP, masking de PII, auditoria hash-chain).
 
 ---
 
 ### 📊 Machine Learning & Ciência de Dados
+
+> Base de ML aplicado (25 projetos) — código completo em **[github.com/alanjoffre/data-science](https://github.com/alanjoffre/data-science)**.
+
+<details>
+<summary><b>📂 Clique para expandir a galeria completa de projetos</b></summary>
+<br>
 
 #### [Logistica | Transporte: Detecção de Anomalias em Tarifas de Compartilhamento de Viagem.](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas)
 <p align="center">
@@ -173,6 +193,8 @@ Engenharia de dados/backend de ponta a ponta: backend assíncrono **Python/FastA
 </p>
 - **Descrição**: Projeto de análise de estoque utilizando Power BI para criação de dashboards interativos e visualização de dados de inventário.
 
+</details>
+
 ---
 
-<p align="center">&copy; 2026 Alan Joffre · Data Engineer / Analytics Engineer</p>
+<p align="center">&copy; 2026 Alan Joffre · Data Engineer / Analytics Engineer · <a href="https://linkedin.com/in/alanjoffre">LinkedIn</a> · <a href="https://alanjoffre.github.io/my-profile/">Página pessoal</a></p>
