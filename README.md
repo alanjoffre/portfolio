@@ -90,6 +90,8 @@ flowchart TB
 
 ### 🧠 Aira — Plataforma SaaS de IA (em produção na AWS)
 
+<img src="./assets/aira-banner.svg" alt="Aira — plataforma SaaS de IA em produção na AWS" width="100%">
+
 Engenharia de dados/backend de ponta a ponta: backend assíncrono **Python/FastAPI**, **PostgreSQL** multi-organização (migração em produção sem perda), integração **LLM (Anthropic Claude)** com controle de custo, **CI/CD** com testes contra Postgres e SAST, e segurança/governança (CSP, masking de PII, auditoria hash-chain).
 
 ---

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Aira — plataforma SaaS de IA em produção na AWS">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111a2e"/>
+      <stop offset="0.55" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glowV" cx="0.15" cy="0.1" r="0.6">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="0.92" cy="0.9" r="0.6">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="340" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="18" fill="url(#glowV)"/>
+  <rect width="1200" height="340" rx="18" fill="url(#glowC)"/>
+  <rect x="1" y="1" width="1198" height="338" rx="17" fill="none" stroke="#2a3550" stroke-width="1"/>
+
+  <!-- right-side: shield (governança/segurança) -->
+  <path d="M1030 112 L1092 134 L1092 182 Q1092 220 1030 244 Q968 220 968 182 L968 134 Z"
+        fill="#0d1117" stroke="#22d3ee" stroke-width="2.5" opacity="0.95"/>
+  <path d="M1006 176 l16 16 l30 -34" fill="none" stroke="#a78bfa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- baseline motif -->
+  <line x1="60" y1="304" x2="1140" y2="304" stroke="#22d3ee" stroke-width="2" opacity="0.25"
+        stroke-dasharray="26 18" stroke-linecap="round"/>
+
+  <!-- wordmark + private tag -->
+  <text x="58" y="116" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="url(#ink)" letter-spacing="-0.5">Aira</text>
+  <g>
+    <rect x="196" y="74" width="176" height="30" rx="15" fill="#151226" stroke="#a78bfa66"/>
+    <text x="284" y="94" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#c4b5fd">Produ&#231;&#227;o privada &#183; AWS</text>
+  </g>
+
+  <!-- taglines -->
+  <text x="62" y="154" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600" fill="#c9d4e5">Plataforma SaaS de IA &#183; backend de dados end-to-end</text>
+  <text x="62" y="182" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" fill="#7f8ba3">FastAPI ass&#237;ncrono &#183; PostgreSQL multi-org &#183; LLM (Claude) com controle de custo</text>
+
+  <!-- stack pills -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" text-anchor="middle">
+    <g><rect x="60"  y="206" width="90"  height="34" rx="17" fill="#161f33" stroke="#33406090"/><text x="105" y="228" fill="#cdd6e6">FastAPI</text></g>
+    <g><rect x="158" y="206" width="112" height="34" rx="17" fill="#161f33" stroke="#33406090"/><text x="214" y="228" fill="#cdd6e6">PostgreSQL</text></g>
+    <g><rect x="278" y="206" width="78"  height="34" rx="17" fill="#161f33" stroke="#33406090"/><text x="317" y="228" fill="#cdd6e6">Claude</text></g>
+    <g><rect x="364" y="206" width="72"  height="34" rx="17" fill="#161f33" stroke="#33406090"/><text x="400" y="228" fill="#cdd6e6">CI/CD</text></g>
+    <g><rect x="444" y="206" width="66"  height="34" rx="17" fill="#161f33" stroke="#33406090"/><text x="477" y="228" fill="#cdd6e6">SAST</text></g>
+  </g>
+
+  <!-- governance highlights -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <g><rect x="60"  y="256" width="98"  height="32" rx="8" fill="#0e1b1f" stroke="#22d3ee66"/><text x="109" y="277" fill="#67e8f9">multi-org</text></g>
+    <g><rect x="166" y="256" width="126" height="32" rx="8" fill="#0e1b1f" stroke="#22d3ee66"/><text x="229" y="277" fill="#67e8f9">masking de PII</text></g>
+    <g><rect x="300" y="256" width="190" height="32" rx="8" fill="#151226" stroke="#a78bfa66"/><text x="395" y="277" fill="#c4b5fd">auditoria hash-chain</text></g>
+  </g>
+</svg>
