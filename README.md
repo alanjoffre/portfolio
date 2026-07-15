@@ -52,6 +52,8 @@ flowchart LR
 
 ### [🤖 RodoIA — Engenharia de IA de ponta a ponta sobre dados públicos da ANTT (Open Source)](https://github.com/alanjoffre/rodoia)
 
+<a href="https://github.com/alanjoffre/rodoia"><img src="./assets/rodoia-banner.svg" alt="RodoIA — Engenharia de IA de ponta a ponta" width="100%"></a>
+
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen?logo=githubactions&logoColor=white)](https://github.com/alanjoffre/rodoia)
 ![Gate](https://img.shields.io/badge/gate%20de%20avaliação-12%2F12-brightgreen)
 ![Testes](https://img.shields.io/badge/testes-155-brightgreen)
