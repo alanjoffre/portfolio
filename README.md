@@ -28,6 +28,8 @@ Nos últimos projetos, expandi para **Engenharia de IA de produção**: RAG aval
 
 ### [🏗️ toll-analytics-platform — Plataforma de dados end-to-end (Open Source)](https://github.com/alanjoffre/toll-analytics-platform)
 
+<a href="https://github.com/alanjoffre/toll-analytics-platform"><img src="./assets/toll-banner.svg" alt="toll-analytics-platform — plataforma de dados end-to-end" width="100%"></a>
+
 Plataforma de dados **open-source ponta a ponta** que espelha em OSS a arquitetura aplicada em produção:
 
 ```mermaid
