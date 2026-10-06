@@ -26,6 +26,15 @@ Nos últimos projetos, expandi para **Engenharia de IA de produção**: RAG aval
 
 ## Engenharia de Dados
 
+### [🧱 oss-lakehouse — Lakehouse sobre dados reais do GitHub (Open Source)](https://github.com/alanjoffre/oss-lakehouse)
+
+Lakehouse de ponta a ponta (bronze → silver → gold) em **PySpark e Delta Lake** sobre eventos reais do GitHub, construído como
+**18 notebooks executados** apoiados num pacote Python com **190 testes** e CI. Cobre ingestão incremental, MERGE e SCD2,
+Structured Streaming, modelagem dimensional, qualidade e contratos, performance no Spark com skew real, Delta Lake por dentro,
+governança e LGPD, **IA dentro do pipeline com avaliação** e infraestrutura da **Azure em Terraform** (validada, não implantada).
+
+➡️ **[Ver repositório](https://github.com/alanjoffre/oss-lakehouse)** &nbsp;·&nbsp; **[Guia de estudo — 199 perguntas respondidas](https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_DE_ESTUDO.md)**
+
 ### [🏗️ toll-analytics-platform — Plataforma de dados end-to-end (Open Source)](https://github.com/alanjoffre/toll-analytics-platform)
 
 <a href="https://github.com/alanjoffre/toll-analytics-platform"><img src="./assets/toll-banner.svg" alt="toll-analytics-platform — plataforma de dados end-to-end" width="100%"></a>
