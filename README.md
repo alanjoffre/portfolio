@@ -27,7 +27,7 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 <a href="https://github.com/alanjoffre/toll-analytics-platform"><img src="./assets/toll-banner.svg" alt="toll-analytics-platform — plataforma de dados de ponta a ponta" width="100%"></a>
 
 - **Problema:** construir do zero, com ferramentas abertas e dados sintéticos, uma plataforma de dados completa. O repositório não contém código, dado nem regra de empregador ou cliente.
-- **Decisão:** desenvolvimento em DuckDB e produção em Databricks, sem alterar o SQL.
+- **Decisão:** desenvolvimento em DuckDB, sem custo e reprodutível; desenhado para Databricks sem alterar o SQL (infraestrutura em Terraform, verificada com `terraform validate`, sem `apply`).
 - **Resultado:** modelagem Medallion com contracts, unit tests, Semantic Layer e dbt Mesh; CI/CD com 10 workflows (Slim CI, gate de Data Quality, promoção de staging para produção); [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/).
 - **Stack:** dlt · dbt · Airflow com Cosmos · Soda · OpenLineage · Evidence.dev · Kafka (Redpanda) · Terraform
 - **Links:** [repositório do toll-analytics-platform](https://github.com/alanjoffre/toll-analytics-platform) · [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)
@@ -35,7 +35,7 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 ```mermaid
 flowchart LR
   SRC["CSV e eventos"] --> ING["dlt"]
-  ING --> LAND[("landing<br/>DuckDB em desenvolvimento · Databricks em produção")]
+  ING --> LAND[("landing<br/>DuckDB (executado) · Databricks (desenhado, sem apply)")]
   LAND --> T["dbt<br/>Medallion · contracts · Semantic Layer · Mesh"]
   T --> DQ["Data Quality<br/>Soda · Elementary"]
   T --> BI["BI<br/>Evidence.dev"]
@@ -104,7 +104,7 @@ Sou o responsável técnico pelo desenvolvimento e pela operação da Aira, prod
 
 - [Detecção de anomalias em tarifas](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas) — modelos supervisionados e não supervisionados em tarifas de viagens compartilhadas.
 - [Clusterização de séries temporais](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/3_analise_desempenho_viagens_agrupadas_clusterizacao_series_temporais) — janelas sobrepostas e clusterização (K-Shape, DBSCAN), com Optuna e MLflow.
-- [Detecção de fraude em cartão](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection) — Random Forest para detectar fraude, servido em streaming com Flask, Spark e Kafka.
+- [Detecção de fraude em cartão](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection) — Random Forest para detectar fraude, servido em streaming com Flask e Kafka.
 - [Reconhecimento facial e detecção de objetos](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_facial_e_deteccao_de_objetos) — visão computacional em tempo real, integrada a uma aplicação web.
 - [Análise de sentimentos](https://github.com/alanjoffre/data-science/tree/master/projetos/analise-de-sentimentos) — classificação de opiniões em larga escala com NLP.
 - [Previsão de câmbio dólar/real](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes) — Random Forest, XGBoost e LSTM.
