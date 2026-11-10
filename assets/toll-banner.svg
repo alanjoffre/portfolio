@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="toll-analytics-platform — plataforma de dados end-to-end, open source">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="toll-analytics-platform — plataforma de dados de ponta a ponta, open source">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#111a2e"/>
@@ -54,8 +54,8 @@
   <text x="58" y="112" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="47" font-weight="800" fill="url(#ink)" letter-spacing="-0.5">toll-analytics-platform</text>
 
   <!-- taglines -->
-  <text x="62" y="150" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600" fill="#c9d4e5">Plataforma de dados end-to-end &#183; lakehouse &#183; Open Source</text>
-  <text x="62" y="178" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" fill="#7f8ba3">espelha em OSS uma arquitetura de produ&#231;&#227;o &#8212; dev em DuckDB, prod em Databricks</text>
+  <text x="62" y="150" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600" fill="#c9d4e5">Plataforma de dados de ponta a ponta &#183; lakehouse &#183; Open Source</text>
+  <text x="62" y="178" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" fill="#7f8ba3">constru&#237;da do zero com dados sint&#233;ticos: desenvolvimento em DuckDB, produ&#231;&#227;o em Databricks</text>
 
   <!-- pipeline pills -->
   <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" text-anchor="middle">

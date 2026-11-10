@@ -1,187 +1,114 @@
-<div align="center">
+# Alan Joffre — portfólio
 
-# Alan Joffre
+**Engenheiro de Dados** · [Noron.dev](https://noron.dev) · São Paulo, SP
 
-### Data Engineer · Analytics Engineer · AI Engineer
+[LinkedIn](https://www.linkedin.com/in/alanjoffre) · [GitHub](https://github.com/alanjoffre) · [Página pessoal](https://alanjoffre.github.io/my-profile/) · [Currículo (PDF)](https://alanjoffre.github.io/my-profile/assets/curriculo_alanjoffre_ptbr.pdf)
 
-**Lakehouse · dbt · Databricks · Delta Lake · Airflow · PySpark · AWS/Azure** &nbsp;•&nbsp; **RAG · LLM · fine-tuning (QLoRA) · vLLM · LangGraph · MLOps** &nbsp;•&nbsp; **SQL · Python**
+## Em 30 segundos
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-alanjoffre-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/alanjoffre)
-[![GitHub](https://img.shields.io/badge/GitHub-alanjoffre-181717?logo=github&logoColor=white)](https://github.com/alanjoffre)
-[![Página pessoal](https://img.shields.io/badge/🌐_Página_pessoal-alanjoffre.github.io-2ea44f)](https://alanjoffre.github.io/my-profile/)
+- **Dados:** lakehouse em Databricks e dbt em cliente real, com o tempo de apuração reduzido de até 20 para 2 dias; aqui, o mesmo desenho em open source, com testes e CI.
+- **IA aplicada com avaliação:** RAG, fine-tuning e Text-to-SQL medidos com intervalo de confiança (IC) e avaliação como gate de CI.
+- **Back-end:** Python/FastAPI em produção na Aira, produto de IA da Noron, e um banco digital fictício em Java com concorrência medida.
 
-[**🏗️ Engenharia de Dados**](#engenharia-de-dados) · [**🤖 IA / LLM**](#ia--llm-engineering) · [**📊 ML & Ciência de Dados**](#machine-learning--ciência-de-dados)
+Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o resultado medido, a stack e os links. Os números vêm de testes ou de medições versionadas no repositório. Os projetos abertos são feitos com apoio de assistente de IA (Claude), visível nos commits; o escopo, as decisões de arquitetura e as medições são meus, e revisei o resultado.
 
-</div>
+## Engenharia de dados
 
----
+### oss-lakehouse — lakehouse sobre dados reais do GitHub
 
-### Sobre mim
+- **Problema:** aprender e mostrar engenharia de dados em Databricks sem depender de conta de nuvem, sobre dados reais.
+- **Decisão:** o mesmo código roda localmente (PySpark e Delta Lake) e no Databricks (job em Databricks Asset Bundles). A infraestrutura Azure está em Terraform, verificada com `terraform validate`, sem `apply`.
+- **Resultado:** 18 notebooks executados, com o resultado na própria célula, e um pacote Python com mais de 180 testes e CI. Cobre ingestão incremental, MERGE e SCD2, Structured Streaming, modelagem dimensional, qualidade e contratos, performance no Spark com data skew real, governança e LGPD, e IA dentro do pipeline avaliada contra gabarito.
+- **Stack:** PySpark · Delta Lake · Databricks · Terraform · GitHub Actions
+- **Links:** [repositório do oss-lakehouse](https://github.com/alanjoffre/oss-lakehouse) · [guia de estudo com 199 perguntas respondidas](https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_DE_ESTUDO.md)
 
-Engenheiro de Dados / Analytics Engineer com foco em **produtos de dados end-to-end** — da arquitetura **lakehouse** (Medallion, Databricks, Delta Lake) à entrega de análises prontas para decisão, com orquestração (Airflow), Data Quality, lineage e governança ponta a ponta.
+### toll-analytics-platform — plataforma de dados de ponta a ponta
 
-Nos últimos projetos, expandi para **Engenharia de IA de produção**: RAG avaliado com rigor estatístico, fine-tuning de LLM próprio (QLoRA + serving em vLLM), agentes (LangGraph) e **MLOps com avaliação como gate de CI**. O projeto **[RodoIA](https://github.com/alanjoffre/rodoia)** abaixo prova esse ciclo completo — do *backpropagation* à mão ao deploy — sobre dados públicos reais.
+<a href="https://github.com/alanjoffre/toll-analytics-platform"><img src="./assets/toll-banner.svg" alt="toll-analytics-platform — plataforma de dados de ponta a ponta" width="100%"></a>
 
----
-
-## Engenharia de Dados
-
-### [🧱 oss-lakehouse — Lakehouse sobre dados reais do GitHub (Open Source)](https://github.com/alanjoffre/oss-lakehouse)
-
-Lakehouse de ponta a ponta (bronze → silver → gold) em **PySpark e Delta Lake** sobre eventos reais do GitHub, construído como
-**18 notebooks executados** apoiados num pacote Python com **190 testes** e CI. Cobre ingestão incremental, MERGE e SCD2,
-Structured Streaming, modelagem dimensional, qualidade e contratos, performance no Spark com skew real, Delta Lake por dentro,
-governança e LGPD, **IA dentro do pipeline com avaliação** e infraestrutura da **Azure em Terraform** (validada, não implantada).
-
-➡️ **[Ver repositório](https://github.com/alanjoffre/oss-lakehouse)** &nbsp;·&nbsp; **[Guia de estudo — 199 perguntas respondidas](https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_DE_ESTUDO.md)**
-
-### [🏗️ toll-analytics-platform — Plataforma de dados end-to-end (Open Source)](https://github.com/alanjoffre/toll-analytics-platform)
-
-<a href="https://github.com/alanjoffre/toll-analytics-platform"><img src="./assets/toll-banner.svg" alt="toll-analytics-platform — plataforma de dados end-to-end" width="100%"></a>
-
-Plataforma de dados **open-source ponta a ponta** que espelha em OSS a arquitetura aplicada em produção:
+- **Problema:** construir do zero, com ferramentas abertas e dados sintéticos, uma plataforma de dados completa. O repositório não contém código, dado nem regra de empregador ou cliente.
+- **Decisão:** desenvolvimento em DuckDB e produção em Databricks, sem alterar o SQL.
+- **Resultado:** modelagem Medallion com contracts, unit tests, Semantic Layer e dbt Mesh; CI/CD com 10 workflows (Slim CI, gate de Data Quality, promoção de staging para produção); [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/).
+- **Stack:** dlt · dbt · Airflow com Cosmos · Soda · OpenLineage · Evidence.dev · Kafka (Redpanda) · Terraform
+- **Links:** [repositório do toll-analytics-platform](https://github.com/alanjoffre/toll-analytics-platform) · [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)
 
 ```mermaid
 flowchart LR
-  SRC["CSV / Eventos"] --> ING["dlt (EL)"]
-  ING --> LAND[("landing<br/>DuckDB dev · Databricks prod")]
+  SRC["CSV e eventos"] --> ING["dlt"]
+  ING --> LAND[("landing<br/>DuckDB em desenvolvimento · Databricks em produção")]
   LAND --> T["dbt<br/>Medallion · contracts · Semantic Layer · Mesh"]
   T --> DQ["Data Quality<br/>Soda · Elementary"]
   T --> BI["BI<br/>Evidence.dev"]
-  ORCH["Airflow + Cosmos"] -.->|orquestra| ING
+  ORCH["Airflow com Cosmos"] -.->|orquestra| ING
   ORCH -.->|orquestra| T
-  OBS["OpenLineage · Prometheus/Grafana"] -.->|observa| ORCH
+  OBS["OpenLineage · Prometheus e Grafana"] -.->|observa| ORCH
 ```
 
-`dlt` (EL) → `dbt` (Medallion, model contracts, Semantic Layer, dbt Mesh) → `Airflow` + Astronomer Cosmos → Data Quality (`Soda`) → observabilidade/lineage (`OpenLineage`) → BI (`Evidence.dev`) → CI/CD + IaC (`Terraform`). Dev 100% em DuckDB; prod em Databricks (Unity Catalog + Delta).
+## Engenharia de IA
 
-➡️ **[Ver repositório](https://github.com/alanjoffre/toll-analytics-platform)** &nbsp;·&nbsp; **[▶ Dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)**
+### RodoIA — engenharia de IA de ponta a ponta
 
----
+<a href="https://github.com/alanjoffre/rodoia"><img src="./assets/rodoia-banner.svg" alt="RodoIA — engenharia de IA de ponta a ponta" width="100%"></a>
 
-## IA / LLM Engineering
+- **Problema:** ir além de "chamar a API de um modelo": do backpropagation escrito à mão ao serving em produção, sobre a regulação e os dados abertos da ANTT.
+- **Decisão:** motor de dados escolhido por benchmark (DuckDB 6,7 vezes mais rápido que o Spark, sem divergências) e avaliação como gate de CI, que barra a entrega quando a qualidade cai.
+- **Resultado:** RAG com hit@5 de 0,62 e precisão de citação de 0,92; fine-tuning QLoRA em NER jurídico (reconhecimento de entidades) com F1 de 0,13 para 0,77, servido com vLLM a 205 tokens/s; agente em LangGraph com roteamento de 0,95 (n=21); gate 30/30 e 297 testes.
+- **Stack:** PyTorch · Hugging Face · Qdrant · LangGraph · vLLM · DuckDB · MLflow · DVC
+- **Links:** [repositório do RodoIA](https://github.com/alanjoffre/rodoia) · [demo ao vivo](https://huggingface.co/spaces/alanjoffre/rodoia-rag) · [a história do projeto](https://github.com/alanjoffre/rodoia/blob/main/docs/HISTORIA.md)
 
-### [🤖 RodoIA — Engenharia de IA de ponta a ponta sobre dados públicos da ANTT (Open Source)](https://github.com/alanjoffre/rodoia)
-
-<a href="https://github.com/alanjoffre/rodoia"><img src="./assets/rodoia-banner.svg" alt="RodoIA — Engenharia de IA de ponta a ponta" width="100%"></a>
-
-[![CI](https://img.shields.io/badge/CI-passing-brightgreen?logo=githubactions&logoColor=white)](https://github.com/alanjoffre/rodoia)
-![Gate](https://img.shields.io/badge/gate%20de%20avaliação-12%2F12-brightgreen)
-![Testes](https://img.shields.io/badge/testes-155-brightgreen)
-[![Demo](https://img.shields.io/badge/🔗_demo_ao_vivo-HF_Spaces-blue)](https://huggingface.co/spaces/alanjoffre/rodoia-rag)
-![License](https://img.shields.io/badge/license-MIT-green)
-
-Portfólio de **AI Engineering** que prova o ciclo completo — do fundamento matemático ao serving em produção — sobre a regulação e os dados abertos do transporte rodoviário brasileiro. A maioria dos projetos de IA para em "chamei a API da OpenAI"; este vai do **backprop escrito à mão** ao **CI com avaliação como gate**.
+O diferencial não são os números altos, e sim o rigor de corrigir os próprios números: o conjunto held-out desfez a memorização, o backtest desfez uma escolha a dedo e a auditoria humana encontrou 16% dos rótulos de referência errados.
 
 ```mermaid
 flowchart TB
-  Q["Pergunta do usuário"] --> AG["🤖 Agente (LangGraph)<br/>guardrail → roteador → síntese"]
-  AG --> RAG["🔎 RAG regulatório<br/>E5 + BM25 + RRF"]
-  AG --> FT["🎯 Modelo fine-tunado<br/>QLoRA · vLLM fp8"]
-  AG --> DADOS["📊 Dados estruturados<br/>DuckDB · previsão"]
-  RAG & FT & DADOS --> BASE["🧮 Fundamentos ML/DL<br/>backprop + attention à mão"]
-  MLOPS["⚙️ MLOps: gate CI · MLflow · DVC · drift · custo"] -.->|governa| AG
+  Q["Pergunta do usuário"] --> AG["Agente (LangGraph)<br/>guardrail → roteador → síntese"]
+  AG --> RAG["RAG regulatório<br/>E5 + BM25 + RRF"]
+  AG --> FT["Modelo com fine-tuning<br/>QLoRA · vLLM fp8"]
+  AG --> DADOS["Dados estruturados<br/>DuckDB · previsão"]
+  RAG & FT & DADOS --> BASE["Fundamentos de ML<br/>backpropagation e attention à mão"]
+  MLOPS["MLOps: gate de CI · MLflow · DVC · drift · custo"] -.->|governa| AG
 ```
 
-**Resultados de relance** (todos com evidência versionada e IC):
+### RodoQuery — Text-to-SQL sobre camada semântica
 
-| Eixo | Resultado |
-|---|---|
-| 🔎 **RAG** | hit@5 **0,62** · precisão de citação **0,92** · **auditoria κ humana** achou 16% dos rótulos-gold errados e reportou o impacto |
-| 🎯 **Fine-tuning** | NER jurídico QLoRA: **F1 0,13 → 0,77** (SOTA 0,89) · serving vLLM fp8 **205 tok/s** |
-| 📊 **Dados** | 741k linhas, esquema estrela DuckDB · **Holt-Winters bate o naïve** (pareado, IC) |
-| 🤖 **Agente** | grafo LangGraph com arestas condicionais · **roteamento 0,95** (n=21) |
-| ⚙️ **MLOps** | **gate 12/12** no CI · drift PSI 0,005 · custo R$/1k da vazão medida |
+- **Decisão:** o agente consulta a camada semântica (Semantic Layer) em vez de escrever SQL cru, com avaliação por execução e guardrails.
+- **Resultado:** 100% (IC 97,4 a 100) contra 44,5% do SQL direto, n=146, em dados reais da ANTT; 251 testes.
+- **Links:** [repositório do RodoQuery](https://github.com/alanjoffre/rodoquery)
 
-> **O diferencial não são os números altos — é o rigor ter corrigido os próprios números** (held-out derrubando memorização, backtest derrubando a "cereja", auditoria humana achando gold errado). Engenharia de IA a sério: deixar a evidência mandar.
+### NãoConsta — RAG contratual avaliado pelo que recusa
 
-➡️ **[Ver repositório](https://github.com/alanjoffre/rodoia)** &nbsp;·&nbsp; **[▶ Demo ao vivo (grátis)](https://huggingface.co/spaces/alanjoffre/rodoia-rag)** &nbsp;·&nbsp; **[📖 A história](https://github.com/alanjoffre/rodoia/blob/main/docs/HISTORIA.md)**
+- **Decisão:** medir o agente pela capacidade de responder "não consta no contrato" quando a resposta não existe.
+- **Resultado:** benchmark CUAD com 510 contratos e 20.910 perguntas, 68% delas sem resposta no contrato.
+- **Links:** [repositório do NãoConsta](https://github.com/alanjoffre/naoconsta)
 
-### 🧠 Aira — Plataforma SaaS de IA (em produção na AWS)
+## Back-end em Java
 
-<img src="./assets/aira-banner.svg" alt="Aira — plataforma SaaS de IA em produção na AWS" width="100%">
+### Ledgerly Bank — banco digital fictício em Java
 
-Engenharia de dados/backend de ponta a ponta: backend assíncrono **Python/FastAPI**, **PostgreSQL** multi-organização (migração em produção sem perda), integração **LLM (Anthropic Claude)** com controle de custo, **CI/CD** com testes contra Postgres e SAST, e segurança/governança (CSP, masking de PII, auditoria hash-chain).
+- **Problema:** mostrar back-end de sistema financeiro com consistência de saldo sob concorrência, construído do zero e em público.
+- **Decisão:** razão contábil em partidas dobradas e Pix com Saga, Outbox e Kafka; extrato em CQRS (MongoDB).
+- **Resultado:** saldo sem gasto duplo sob 1.500 saques simultâneos; 1.141 testes, 96,7% de mutação no domínio, 92,6% de cobertura e contratos com Pact; 47 ADRs (registros de decisão de arquitetura).
+- **Stack:** Java 25 · Spring Boot · Quarkus · Kafka · MongoDB · Keycloak · ONNX · React
+- **Links:** [repositório do Ledgerly Bank](https://github.com/alanjoffre/ledgerly-bank)
 
----
+## Em produção: Aira
 
-## Machine Learning & Ciência de Dados
+<img src="./assets/aira-banner.svg" alt="Aira — produto de IA da Noron, em produção na AWS" width="100%">
 
-Base de ML aplicado (**25 projetos**) cobrindo classificação, regressão, séries temporais, NLP, visão computacional e streaming — código completo em **[github.com/alanjoffre/data-science](https://github.com/alanjoffre/data-science)**. Uma seleção:
+Sou o responsável técnico pelo desenvolvimento e pela operação da Aira, produto de IA da Noron, em produção na AWS. Back-end assíncrono em Python/FastAPI e PostgreSQL, com migração de banco em produção conferida por contagem de linhas e LLM (Claude) com controle de custo. Segurança e governança com mascaramento de dados pessoais, trilha de auditoria e análise estática de segurança (Bandit/Ruff) no gate de release. Código fechado.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**[🚚 Detecção de Anomalias em Tarifas](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas)**
-<img alt="Detecção de anomalias" src="./assets/deteccao-anomalias.png" width="100%">
-Pipeline completo de detecção de anomalias em tarifas de viagens compartilhadas, combinando modelos supervisionados e não supervisionados.
-
-</td>
-<td width="50%" valign="top">
-
-**[📈 Clusterização de Séries Temporais](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/3_analise_desempenho_viagens_agrupadas_clusterizacao_series_temporais)**
-<img alt="Clusterização de séries temporais" src="./assets/viagem_agrupadas.jpeg" width="100%">
-Segmentação com janelas sobrepostas + clusterização (K-Shape, DBSCAN), otimização via **Optuna** e rastreio no **MLflow**.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**[💳 Detecção de Fraude em Cartão](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection)**
-<img alt="Detecção de fraude" src="./assets/creditcard.jpg" width="100%">
-Random Forest para fraude em transações financeiras, servido com **Flask · Spark · Kafka** (streaming).
-
-</td>
-<td width="50%" valign="top">
-
-**[👁️ Reconhecimento Facial + Detecção de Objetos](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_facial_e_deteccao_de_objetos)**
-<img alt="Visão computacional" src="./assets/reconhecimento_facial_e_deteccao_de_objetos.jpg" width="100%">
-Visão computacional com monitoramento em tempo real, integrada a uma aplicação web.
-
-</td>
-</tr>
-</table>
-
-**[💬 Análise de Sentimentos (NLP)](https://github.com/alanjoffre/data-science/tree/master/projetos/analise-de-sentimentos)** — classificação de opiniões em larga escala com técnicas de NLP.
+## Trabalhos anteriores: machine learning
 
 <details>
-<summary><b>📂 Ver a galeria completa (mais 20 projetos)</b></summary>
+<summary><b>Ver uma seleção de 6 projetos de ML aplicado</b></summary>
 <br>
 
-**Logística & Transporte**
-- [Análise de Compartilhamento de Viagem — Classificação](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/2_analise_compartilhamento_de_viagem_classificacao)
-- [Previsão de Gorjeta — Regressão](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/1_previsao_gorjeta_regressao)
-- [Otimização de Lucro no Transporte de Cargas — Algoritmos Genéticos](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/11.OtimizaCarga)
+- [Detecção de anomalias em tarifas](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas) — modelos supervisionados e não supervisionados em tarifas de viagens compartilhadas.
+- [Clusterização de séries temporais](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/3_analise_desempenho_viagens_agrupadas_clusterizacao_series_temporais) — janelas sobrepostas e clusterização (K-Shape, DBSCAN), com Optuna e MLflow.
+- [Detecção de fraude em cartão](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection) — Random Forest para detectar fraude, servido em streaming com Flask, Spark e Kafka.
+- [Reconhecimento facial e detecção de objetos](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_facial_e_deteccao_de_objetos) — visão computacional em tempo real, integrada a uma aplicação web.
+- [Análise de sentimentos](https://github.com/alanjoffre/data-science/tree/master/projetos/analise-de-sentimentos) — classificação de opiniões em larga escala com NLP.
+- [Previsão de câmbio dólar/real](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes) — Random Forest, XGBoost e LSTM.
 
-**Finanças & Risco**
-- [Previsão de Câmbio Dólar/Real — Random Forest · XGBoost · LSTM](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes)
-- [Análise de Crédito — Modelos Preditivos](https://github.com/alanjoffre/data-science/tree/master/projetos/ciencia-de-dados-completo-real-2024)
-- [Rotatividade de Clientes (Churn) — Classificação](https://github.com/alanjoffre/data-science/tree/master/projetos/rotatividade-de-clientes)
-- [Dashboard de Monitoramento da Bolsa](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/13.Acoes)
-
-**Visão Computacional & NLP**
-- [OCR com Tesseract](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_optico_de_caracteres_tesseract)
-- [Geração de Imagens — IA Generativa](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/12.Generativa)
-
-**Clustering, Recomendação & Séries Temporais**
-- [Segmentação de Clientes — KMeans · Spark · Kafka](https://github.com/alanjoffre/data-science/tree/master/projetos/segmentacao_de_clientes_clustering)
-- [Sistema de Recomendação — Regras de Associação](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/8.Recomendacao)
-- [Previsão da Produção de Leite — Séries Temporais](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/5.Proleite)
-- [Benchmark Visual de Previsão — Séries Temporais](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/9.BenchmarkST)
-
-**Estatística, EDA & Aplicações**
-- [Previsão de Custos de Franquia — Regressão Linear](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/3.Franquia)
-- [Qualidade de Veículos — Classificação](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/4.QualidadeVeiculos)
-- [Probabilidade de Falha de Equipamentos — Distribuição de Poisson](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/6.FalhaEquipamento)
-- [Avaliação de Normalidade de Dados — EDA](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/7.Normalidades)
-- [Análise de Dados Públicos de Despesas — EDA](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/10.Exploratoria)
-- [App Completo Multi-página — Streamlit + IA](https://github.com/alanjoffre/data-science/tree/master/projetos/streamlit-12-aplicacoes-inteligencia-artificial/14.Appcompleta)
-- [Análise de Estoque — Power BI](https://app.powerbi.com/view?r=eyJrIjoiZDg2NGExN2ItYzVjMS00NzY4LWE0Y2QtOGQ3Njc4NjUwOGUxIiwidCI6IjZmNjk1NmFkLWQxMDItNGRiZC04NTAyLTZjNmNmMDMxNjI5MSJ9)
+Os 25 projetos estão no repositório [data-science](https://github.com/alanjoffre/data-science).
 
 </details>
-
----
-
-<p align="center">&copy; 2026 Alan Joffre · Data Engineer · Analytics Engineer · AI Engineer · <a href="https://linkedin.com/in/alanjoffre">LinkedIn</a> · <a href="https://alanjoffre.github.io/my-profile/">Página pessoal</a></p>

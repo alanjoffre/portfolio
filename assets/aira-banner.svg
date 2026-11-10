@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Aira — plataforma SaaS de IA em produção na AWS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Aira — produto de IA da Noron, em produção na AWS">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#111a2e"/>
@@ -38,12 +38,12 @@
   <text x="58" y="116" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="url(#ink)" letter-spacing="-0.5">Aira</text>
   <g>
     <rect x="196" y="74" width="176" height="30" rx="15" fill="#151226" stroke="#a78bfa66"/>
-    <text x="284" y="94" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#c4b5fd">Produ&#231;&#227;o privada &#183; AWS</text>
+    <text x="284" y="94" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="middle" fill="#c4b5fd">Produto da Noron &#183; AWS</text>
   </g>
 
   <!-- taglines -->
-  <text x="62" y="154" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600" fill="#c9d4e5">Plataforma SaaS de IA &#183; backend de dados end-to-end</text>
-  <text x="62" y="182" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" fill="#7f8ba3">FastAPI ass&#237;ncrono &#183; PostgreSQL multi-org &#183; LLM (Claude) com controle de custo</text>
+  <text x="62" y="154" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600" fill="#c9d4e5">Produto de IA da Noron &#183; desenvolvimento e opera&#231;&#227;o</text>
+  <text x="62" y="182" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" fill="#7f8ba3">FastAPI ass&#237;ncrono &#183; PostgreSQL &#183; LLM (Claude) com controle de custo</text>
 
   <!-- stack pills -->
   <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" text-anchor="middle">
@@ -56,8 +56,8 @@
 
   <!-- governance highlights -->
   <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
-    <g><rect x="60"  y="256" width="98"  height="32" rx="8" fill="#0e1b1f" stroke="#22d3ee66"/><text x="109" y="277" fill="#67e8f9">multi-org</text></g>
-    <g><rect x="166" y="256" width="126" height="32" rx="8" fill="#0e1b1f" stroke="#22d3ee66"/><text x="229" y="277" fill="#67e8f9">masking de PII</text></g>
-    <g><rect x="300" y="256" width="190" height="32" rx="8" fill="#151226" stroke="#a78bfa66"/><text x="395" y="277" fill="#c4b5fd">auditoria hash-chain</text></g>
+    <g><rect x="60"  y="256" width="138" height="32" rx="8" fill="#0e1b1f" stroke="#22d3ee66"/><text x="129" y="277" fill="#67e8f9">avalia&#231;&#227;o de IA</text></g>
+    <g><rect x="206" y="256" width="126" height="32" rx="8" fill="#0e1b1f" stroke="#22d3ee66"/><text x="269" y="277" fill="#67e8f9">masking de PII</text></g>
+    <g><rect x="340" y="256" width="190" height="32" rx="8" fill="#151226" stroke="#a78bfa66"/><text x="435" y="277" fill="#c4b5fd">trilha de auditoria</text></g>
   </g>
 </svg>
