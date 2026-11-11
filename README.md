@@ -8,9 +8,9 @@
 
 - **Dados:** lakehouse em Databricks e dbt em cliente real, com o tempo de apuração reduzido de até 20 para 2 dias; aqui, o mesmo desenho em open source, com testes e CI.
 - **IA aplicada com avaliação:** RAG, fine-tuning e Text-to-SQL medidos com intervalo de confiança (IC) e avaliação como gate de CI.
-- **Back-end:** Python/FastAPI em produção na Aira, produto de IA da Noron, e um banco digital fictício em Java com concorrência medida.
+- **Back-end:** Python/FastAPI em produção na Aira, produto de IA da Noron.dev, e um banco digital fictício em Java com concorrência medida.
 
-Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o resultado medido, a stack e os links. Os números vêm de testes ou de medições versionadas no repositório. Os projetos abertos são feitos com apoio de assistente de IA (Claude), visível nos commits; o escopo, as decisões de arquitetura e as medições são meus, e revisei o resultado.
+Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o resultado medido, a stack e os links. Os números vêm de testes ou de medições versionadas no repositório. Os projetos abertos são feitos com apoio de assistente de IA; o escopo, as decisões de arquitetura e as medições são meus, e revisei o resultado.
 
 ## Engenharia de dados
 
@@ -92,9 +92,9 @@ flowchart TB
 
 ## Em produção: Aira
 
-<img src="./assets/aira-banner.svg" alt="Aira — produto de IA da Noron, em produção na AWS" width="100%">
+<img src="./assets/aira-banner.svg" alt="Aira — produto de IA da Noron.dev, em produção na AWS" width="100%">
 
-Sou o responsável técnico pelo desenvolvimento e pela operação da Aira, produto de IA da Noron, em produção na AWS. Back-end assíncrono em Python/FastAPI e PostgreSQL, com migração de banco em produção conferida por contagem de linhas e LLM (Claude) com controle de custo. Segurança e governança com mascaramento de dados pessoais, trilha de auditoria e análise estática de segurança (Bandit/Ruff) no gate de release. Código fechado.
+Sou o responsável técnico pelo desenvolvimento e pela operação da Aira, produto de IA da Noron.dev, em produção na AWS. Back-end assíncrono em Python/FastAPI e PostgreSQL, com migração de banco em produção conferida por contagem de linhas e LLM com controle de custo. Segurança e governança com mascaramento de dados pessoais, trilha de auditoria e análise estática de segurança (Bandit/Ruff) no gate de release. Código fechado.
 
 ## Trabalhos anteriores: machine learning
 
