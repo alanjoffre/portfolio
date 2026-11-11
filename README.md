@@ -94,7 +94,11 @@ flowchart TB
 
 <img src="./assets/aira-banner.svg" alt="Aira — produto de IA da Noron.dev, em produção na AWS" width="100%">
 
-Sou o responsável técnico pelo desenvolvimento e pela operação da Aira, produto de IA da Noron.dev, em produção na AWS. Back-end assíncrono em Python/FastAPI e PostgreSQL, com migração de banco em produção conferida por contagem de linhas e LLM com controle de custo. Segurança e governança com mascaramento de dados pessoais, trilha de auditoria e análise estática de segurança (Bandit/Ruff) no gate de release. Código fechado.
+**Aira**, produto de IA da Noron.dev, em produção na AWS desde maio/2026. Sou o responsável técnico pelo desenvolvimento e pela operação. Código fechado.
+
+- **IA com permissão e fonte:** conduzi o desenho para que a IA consulte os arquivos da empresa só com ferramentas de leitura (recuperação agêntica), responda só com o que aquela pessoa tem permissão de ver e cite as fontes.
+- **Avaliação e custo:** respostas avaliadas (mais de 30 casos em 7 categorias, dados fictícios, conferência determinística) antes de mudar prompt, modelo ou esforço; fila, limite por minuto, cota mensal e teto de gasto que bloqueia ou passa ao modelo mais econômico.
+- **Operação:** Python/FastAPI e PostgreSQL em Docker na AWS; mais de 5.000 testes de back-end, trilha de auditoria encadeada por hash, backup diário cifrado (o deploy só segue com o backup externo confirmado) e mais de 60 versões publicadas.
 
 ## Trabalhos anteriores: machine learning
 
