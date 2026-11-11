@@ -1,8 +1,13 @@
-# Alan Joffre — portfólio
+<img src="./assets/faixa-portfolio-v1.svg" alt="Alan Joffre — portfólio" width="100%">
+
+<p>
+<a href="https://alanjoffre.github.io/my-profile/assets/curriculo_alanjoffre_ptbr.pdf"><img src="./assets/btn-curriculo-v1.svg" alt="Baixar currículo (PDF)" width="194" height="52"></a>
+<a href="https://www.linkedin.com/in/alanjoffre"><img src="./assets/btn-linkedin-v1.svg" alt="LinkedIn" width="106" height="52"></a>
+<a href="https://alanjoffre.github.io/my-profile/"><img src="./assets/btn-pagina-v1.svg" alt="Página pessoal" width="148" height="52"></a>
+<a href="https://github.com/alanjoffre"><img src="./assets/btn-github-v1.svg" alt="GitHub" width="97" height="52"></a>
+</p>
 
 **Engenheiro de Dados** · [Noron.dev](https://noron.dev) · São Paulo, SP
-
-[LinkedIn](https://www.linkedin.com/in/alanjoffre) · [GitHub](https://github.com/alanjoffre) · [Página pessoal](https://alanjoffre.github.io/my-profile/) · [Currículo (PDF)](https://alanjoffre.github.io/my-profile/assets/curriculo_alanjoffre_ptbr.pdf)
 
 ## Em 30 segundos
 
@@ -16,6 +21,11 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 
 ### oss-lakehouse — lakehouse sobre dados reais do GitHub
 
+<p>
+<img src="./assets/selo-lakehouse-notebooks-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-lakehouse-testes-v1.svg" alt="" width="68"" height="68">
+</p>
+
 - **Problema:** aprender e mostrar engenharia de dados em Databricks sem depender de conta de nuvem, sobre dados reais.
 - **Decisão:** o mesmo código roda localmente (PySpark e Delta Lake) e no Databricks (job em Databricks Asset Bundles). A infraestrutura Azure está em Terraform, verificada com `terraform validate`, sem `apply`.
 - **Resultado:** 18 notebooks executados, com o resultado na própria célula, e um pacote Python com mais de 180 testes e CI. Cobre ingestão incremental, MERGE e SCD2, Structured Streaming, modelagem dimensional, qualidade e contratos, performance no Spark com data skew real, governança e LGPD, e IA dentro do pipeline avaliada contra gabarito.
@@ -24,7 +34,11 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 
 ### toll-analytics-platform — plataforma de dados de ponta a ponta
 
-<a href="https://github.com/alanjoffre/toll-analytics-platform"><img src="./assets/toll-banner.svg" alt="toll-analytics-platform — plataforma de dados de ponta a ponta" width="100%"></a>
+<p>
+<img src="./assets/selo-toll-workflows-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-toll-duckdb-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-toll-databricks-v1.svg" alt="" width="68"" height="68">
+</p>
 
 - **Problema:** construir do zero, com ferramentas abertas e dados sintéticos, uma plataforma de dados completa. O repositório não contém código, dado nem regra de empregador ou cliente.
 - **Decisão:** desenvolvimento em DuckDB, sem custo e reprodutível; desenhado para Databricks sem alterar o SQL (infraestrutura em Terraform, verificada com `terraform validate`, sem `apply`).
@@ -33,22 +47,26 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 - **Links:** [repositório do toll-analytics-platform](https://github.com/alanjoffre/toll-analytics-platform) · [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)
 
 ```mermaid
-flowchart LR
+flowchart TB
   SRC["CSV e eventos"] --> ING["dlt"]
-  ING --> LAND[("landing<br/>DuckDB (executado) · Databricks (desenhado, sem apply)")]
-  LAND --> T["dbt<br/>Medallion · contracts · Semantic Layer · Mesh"]
+  ING --> LAND[("landing<br/>DuckDB (executado)<br/>Databricks (desenhado, sem apply)")]
+  LAND --> T["dbt<br/>Medallion · contracts<br/>Semantic Layer · Mesh"]
   T --> DQ["Data Quality<br/>Soda · Elementary"]
   T --> BI["BI<br/>Evidence.dev"]
   ORCH["Airflow com Cosmos"] -.->|orquestra| ING
   ORCH -.->|orquestra| T
-  OBS["OpenLineage · Prometheus e Grafana"] -.->|observa| ORCH
+  OBS["OpenLineage<br/>Prometheus e Grafana"] -.->|observa| ORCH
 ```
 
 ## Engenharia de IA
 
 ### RodoIA — engenharia de IA de ponta a ponta
 
-<a href="https://github.com/alanjoffre/rodoia"><img src="./assets/rodoia-banner.svg" alt="RodoIA — engenharia de IA de ponta a ponta" width="100%"></a>
+<p>
+<img src="./assets/selo-rodoia-f1-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-rodoia-hit5-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-rodoia-gate-v1.svg" alt="" width="68"" height="68">
+</p>
 
 - **Problema:** ir além de "chamar a API de um modelo": do backpropagation escrito à mão ao serving em produção, sobre a regulação e os dados abertos da ANTT.
 - **Decisão:** motor de dados escolhido por benchmark (DuckDB 6,7 vezes mais rápido que o Spark, sem divergências) e avaliação como gate de CI, que barra a entrega quando a qualidade cai.
@@ -60,21 +78,31 @@ O diferencial não são os números altos, e sim o rigor de corrigir os próprio
 
 ```mermaid
 flowchart TB
-  Q["Pergunta do usuário"] --> AG["Agente (LangGraph)<br/>guardrail → roteador → síntese"]
-  AG --> RAG["RAG regulatório<br/>E5 + BM25 + RRF"]
-  AG --> FT["Modelo com fine-tuning<br/>QLoRA · vLLM fp8"]
-  AG --> DADOS["Dados estruturados<br/>DuckDB · previsão"]
-  RAG & FT & DADOS --> BASE["Fundamentos de ML<br/>backpropagation e attention à mão"]
-  MLOPS["MLOps: gate de CI · MLflow · DVC · drift · custo"] -.->|governa| AG
+  Q["Pergunta do usuário"] --> AG["Agente (LangGraph)<br/>guardrail → roteador<br/>→ síntese"]
+  AG --> RAG["RAG<br/>regulatório<br/>E5 + BM25<br/>+ RRF"]
+  AG --> FT["Modelo com<br/>fine-tuning<br/>QLoRA ·<br/>vLLM fp8"]
+  AG --> DADOS["Dados<br/>estruturados<br/>DuckDB ·<br/>previsão"]
+  RAG & FT & DADOS --> BASE["Fundamentos de ML<br/>backpropagation e<br/>attention à mão"]
+  MLOPS["MLOps: gate de CI<br/>MLflow · DVC<br/>drift · custo"] -.->|governa| AG
 ```
 
 ### RodoQuery — Text-to-SQL sobre camada semântica
+
+<p>
+<img src="./assets/selo-rodoquery-exec-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-rodoquery-testes-v1.svg" alt="" width="68"" height="68">
+</p>
 
 - **Decisão:** o agente consulta a camada semântica (Semantic Layer) em vez de escrever SQL cru, com avaliação por execução e guardrails.
 - **Resultado:** 100% (IC 97,4 a 100) contra 44,5% do SQL direto, n=146, em dados reais da ANTT; 251 testes.
 - **Links:** [repositório do RodoQuery](https://github.com/alanjoffre/rodoquery)
 
 ### NãoConsta — RAG contratual avaliado pelo que recusa
+
+<p>
+<img src="./assets/selo-naoconsta-perguntas-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-naoconsta-semresposta-v1.svg" alt="" width="68"" height="68">
+</p>
 
 - **Decisão:** medir o agente pela capacidade de responder "não consta no contrato" quando a resposta não existe.
 - **Resultado:** benchmark CUAD com 510 contratos e 20.910 perguntas, 68% delas sem resposta no contrato.
@@ -84,6 +112,12 @@ flowchart TB
 
 ### Ledgerly Bank — banco digital fictício em Java
 
+<p>
+<img src="./assets/selo-ledgerly-saques-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-ledgerly-mutacao-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-ledgerly-testes-v1.svg" alt="" width="68"" height="68">
+</p>
+
 - **Problema:** mostrar back-end de sistema financeiro com consistência de saldo sob concorrência, construído do zero e em público.
 - **Decisão:** razão contábil em partidas dobradas e Pix com Saga, Outbox e Kafka; extrato em CQRS (MongoDB).
 - **Resultado:** saldo sem gasto duplo sob 1.500 saques simultâneos; 1.141 testes, 96,7% de mutação no domínio, 92,6% de cobertura e contratos com Pact; 47 ADRs (registros de decisão de arquitetura).
@@ -92,7 +126,9 @@ flowchart TB
 
 ## Em produção: Aira
 
-<img src="./assets/aira-banner.svg" alt="Aira — produto de IA da Noron.dev, em produção na AWS" width="100%">
+<p>
+<img src="./assets/selo-aira-producao-v1.svg" alt="" width="68"" height="68">
+</p>
 
 **Aira**, produto de IA da Noron.dev, em produção na AWS desde maio/2026. Sou o responsável técnico pelo desenvolvimento e pela operação. Código fechado.
 
@@ -103,15 +139,13 @@ flowchart TB
 ## Trabalhos anteriores: machine learning
 
 <details>
-<summary><b>Ver uma seleção de 6 projetos de ML aplicado</b></summary>
+<summary><b>Ver uma seleção de 4 projetos de ML aplicado</b></summary>
 <br>
 
 - [Detecção de anomalias em tarifas](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/4_deteccao_de_anomalias_em_tarifas) — modelos supervisionados e não supervisionados em tarifas de viagens compartilhadas.
 - [Clusterização de séries temporais](https://github.com/alanjoffre/data-science/tree/master/projetos/logistica_transporte/3_analise_desempenho_viagens_agrupadas_clusterizacao_series_temporais) — janelas sobrepostas e clusterização (K-Shape, DBSCAN), com Optuna e MLflow.
 - [Detecção de fraude em cartão](https://github.com/alanjoffre/data-science/tree/master/projetos/creditcard_fraud_detection) — Random Forest para detectar fraude, servido em streaming com Flask e Kafka.
 - [Reconhecimento facial e detecção de objetos](https://github.com/alanjoffre/data-science/tree/master/projetos/reconhecimento_facial_e_deteccao_de_objetos) — visão computacional em tempo real, integrada a uma aplicação web.
-- [Análise de sentimentos](https://github.com/alanjoffre/data-science/tree/master/projetos/analise-de-sentimentos) — classificação de opiniões em larga escala com NLP.
-- [Previsão de câmbio dólar/real](https://github.com/alanjoffre/data-science/tree/master/projetos/previsao_de_mercado_de_acoes) — Random Forest, XGBoost e LSTM.
 
 Os 25 projetos estão no repositório [data-science](https://github.com/alanjoffre/data-science).
 

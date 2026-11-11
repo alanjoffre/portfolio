@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 68" width="168" height="68" role="img" aria-label="Databricks, desenhado, sem apply">
+  <title>Databricks, desenhado, sem apply</title>
+  <defs>
+    <clipPath id="c"><rect x="4" y="4" width="160" height="60" rx="10"/></clipPath>
+    <linearGradient id="b" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+  </defs>
+  <rect x="4" y="4" width="160" height="60" rx="10" fill="#161b22"/>
+  <rect x="4" y="4" width="4" height="60" fill="url(#b)" clip-path="url(#c)"/>
+  <rect x="4.5" y="4.5" width="159" height="59" rx="9.5" fill="none" stroke="#30363d"/>
+  <g font-family="'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="24" y="33" font-size="22" font-weight="700" fill="#22d3ee" textLength="109.7" lengthAdjust="spacingAndGlyphs">Databricks</text>
+    <text x="24" y="53" font-size="13" fill="#b4bfd0" textLength="128.2" lengthAdjust="spacingAndGlyphs">desenhado, sem apply</text>
+  </g>
+</svg>

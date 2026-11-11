@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 150" width="640" height="150" role="img" aria-label="Alan Joffre — portfólio">
+  <title>Alan Joffre — portfólio</title>
+  <defs>
+    <clipPath id="canto"><rect width="640" height="150" rx="14"/></clipPath>
+    <radialGradient id="violeta" cx="0.12" cy="0" r="1" gradientTransform="translate(0.12 0) scale(0.7 1.2) translate(-0.12 0)">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.40"/><stop offset="0.7" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ciano" cx="0.92" cy="1" r="1" gradientTransform="translate(0.92 1) scale(0.6 1.1) translate(-0.92 -1)">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.34"/><stop offset="0.7" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="marca" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/><stop offset="0.5" stop-color="#818cf8"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="sub" gradientUnits="userSpaceOnUse" x1="40" x2="166" y1="0" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/><stop offset="0.5" stop-color="#818cf8"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#canto)">
+    <rect width="640" height="150" fill="#0d1117"/>
+    <rect width="640" height="150" fill="url(#violeta)"/>
+    <rect width="640" height="150" fill="url(#ciano)"/>
+    <rect y="147" width="640" height="3" fill="url(#marca)" opacity="0.85"/>
+  </g>
+  <rect x="0.5" y="0.5" width="639" height="149" rx="13.5" fill="none" stroke="#30363d"/>
+  <g font-family="'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="40" y="78" font-size="64" font-weight="700" fill="#e6edf3" letter-spacing="-1.3" textLength="317" lengthAdjust="spacingAndGlyphs">Alan Joffre</text>
+    <text x="40" y="118" font-size="30" font-weight="700" fill="url(#sub)" textLength="126" lengthAdjust="spacingAndGlyphs">Portfólio</text>
+  </g>
+</svg>
