@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 668" width="360" height="668" role="img" aria-label="Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt e o dbt; OpenLineage, Prometheus e Grafana observam o Airflow.">
+  <title>Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt e o dbt; OpenLineage, Prometheus e Grafana observam o Airflow.</title>
+  <defs>
+    <clipPath id="canto"><rect width="360" height="668" rx="14"/></clipPath>
+    <linearGradient id="marca" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/><stop offset="0.5" stop-color="#818cf8"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#canto)">
+    <rect width="360" height="668" fill="#0d1117"/>
+    <rect y="665" width="360" height="3" fill="url(#marca)" opacity="0.85"/>
+  </g>
+  <rect x="0.5" y="0.5" width="359" height="667" rx="13.5" fill="none" stroke="#30363d"/>
+  <g font-family="'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <rect x="16" y="16" width="328" height="40" rx="10" fill="#161b22" stroke="#66728f" stroke-width="1.5"/>
+    <text x="26" y="41" font-size="14" font-weight="700" fill="#e6edf3" textLength="92.4" lengthAdjust="spacingAndGlyphs">CSV e eventos</text>
+    <rect x="16" y="80" width="328" height="40" rx="10" fill="#161b22" stroke="#66728f" stroke-width="1.5"/>
+    <text x="26" y="105" font-size="14" font-weight="700" fill="#e6edf3" textLength="18.1" lengthAdjust="spacingAndGlyphs">dlt</text>
+    <path d="M16 150 A164.0 6 0 0 1 344 150 L344 250 A164.0 6 0 0 1 16 250 Z" fill="#161b22" stroke="#66728f" stroke-width="1.5"/>
+    <path d="M16 150 A164.0 6 0 0 0 344 150" fill="none" stroke="#66728f" stroke-width="1.5"/>
+    <text x="26" y="175" font-size="14" font-weight="700" fill="#e6edf3" textLength="49.8" lengthAdjust="spacingAndGlyphs">landing</text>
+    <text x="26" y="195" font-size="14" font-weight="400" fill="#b4bfd0" textLength="125.1" lengthAdjust="spacingAndGlyphs">DuckDB (executado)</text>
+    <text x="26" y="215" font-size="14" font-weight="400" fill="#b4bfd0" textLength="64.7" lengthAdjust="spacingAndGlyphs">Databricks</text>
+    <text x="26" y="235" font-size="14" font-weight="400" fill="#b4bfd0" textLength="146.5" lengthAdjust="spacingAndGlyphs">(desenhado, sem apply)</text>
+    <rect x="16" y="280" width="328" height="80" rx="10" fill="#161b22" stroke="#66728f" stroke-width="1.5"/>
+    <text x="26" y="305" font-size="14" font-weight="700" fill="#e6edf3" textLength="22.8" lengthAdjust="spacingAndGlyphs">dbt</text>
+    <text x="26" y="325" font-size="14" font-weight="400" fill="#b4bfd0" textLength="128.8" lengthAdjust="spacingAndGlyphs">Medallion · contracts</text>
+    <text x="26" y="345" font-size="14" font-weight="400" fill="#b4bfd0" textLength="137.5" lengthAdjust="spacingAndGlyphs">Semantic Layer · Mesh</text>
+    <rect x="16" y="392" width="158" height="60" rx="10" fill="#161b22" stroke="#66728f" stroke-width="1.5"/>
+    <text x="26" y="417" font-size="14" font-weight="700" fill="#e6edf3" textLength="82.3" lengthAdjust="spacingAndGlyphs">Data Quality</text>
+    <text x="26" y="437" font-size="14" font-weight="400" fill="#b4bfd0" textLength="110.3" lengthAdjust="spacingAndGlyphs">Soda · Elementary</text>
+    <rect x="186" y="392" width="158" height="60" rx="10" fill="#161b22" stroke="#66728f" stroke-width="1.5"/>
+    <text x="196" y="417" font-size="14" font-weight="700" fill="#e6edf3" textLength="13.4" lengthAdjust="spacingAndGlyphs">BI</text>
+    <text x="196" y="437" font-size="14" font-weight="400" fill="#b4bfd0" textLength="79.8" lengthAdjust="spacingAndGlyphs">Evidence.dev</text>
+    <rect x="16" y="480" width="328" height="60" rx="10" fill="#161b22" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="26" y="505" font-size="14" font-weight="700" fill="#e6edf3" textLength="135.7" lengthAdjust="spacingAndGlyphs">Airflow com Cosmos</text>
+    <text x="26" y="525" font-size="14" font-weight="600" fill="#22d3ee" textLength="119.1" lengthAdjust="spacingAndGlyphs">orquestra dlt e dbt</text>
+    <rect x="16" y="568" width="328" height="80" rx="10" fill="#161b22" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="26" y="593" font-size="14" font-weight="700" fill="#e6edf3" textLength="86.3" lengthAdjust="spacingAndGlyphs">OpenLineage</text>
+    <text x="26" y="613" font-size="14" font-weight="400" fill="#b4bfd0" textLength="137.3" lengthAdjust="spacingAndGlyphs">Prometheus e Grafana</text>
+    <text x="26" y="633" font-size="14" font-weight="600" fill="#22d3ee" textLength="112.2" lengthAdjust="spacingAndGlyphs">observa o Airflow</text>
+    <line x1="180" y1="56" x2="180" y2="72" stroke="#8a97b3" stroke-width="2"/><path d="M175 71 L180 80 L185 71 Z" fill="#8a97b3"/>
+    <line x1="180" y1="120" x2="180" y2="136" stroke="#8a97b3" stroke-width="2"/><path d="M175 135 L180 144 L185 135 Z" fill="#8a97b3"/>
+    <line x1="180" y1="256" x2="180" y2="272" stroke="#8a97b3" stroke-width="2"/><path d="M175 271 L180 280 L185 271 Z" fill="#8a97b3"/>
+    <line x1="180" y1="360" x2="180" y2="376" stroke="#8a97b3" stroke-width="2"/>
+    <line x1="95" y1="376" x2="265" y2="376" stroke="#8a97b3" stroke-width="2"/>
+    <line x1="95" y1="376" x2="95" y2="384" stroke="#8a97b3" stroke-width="2"/><path d="M90 383 L95 392 L100 383 Z" fill="#8a97b3"/>
+    <line x1="265" y1="376" x2="265" y2="384" stroke="#8a97b3" stroke-width="2"/><path d="M260 383 L265 392 L270 383 Z" fill="#8a97b3"/>
+    <line x1="180" y1="568" x2="180" y2="548" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 4"/><path d="M175 549 L180 540 L185 549 Z" fill="#22d3ee"/>
+    <line x1="16" y1="466" x2="344" y2="466" stroke="#30363d" stroke-width="1"/>
+  </g>
+</svg>

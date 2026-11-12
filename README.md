@@ -15,15 +15,28 @@
 - **IA aplicada com avaliação:** RAG, fine-tuning e Text-to-SQL medidos com intervalo de confiança (IC) e avaliação como gate de CI.
 - **Back-end:** Python/FastAPI em produção na Aira, produto de IA da Noron.dev, e um banco digital fictício em Java com concorrência medida.
 
-Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o resultado medido, a stack e os links. Os números vêm de testes ou de medições versionadas no repositório. Os projetos abertos são feitos com apoio de assistente de IA; o escopo, as decisões de arquitetura e as medições são meus, e revisei o resultado.
+Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o resultado medido e a stack; os projetos abertos trazem também os links. Nos projetos abertos, cada número vem de um teste ou de uma medição versionada no repositório; a Aira tem código fechado, e seus números vêm do repositório privado e da operação, não de repositório público. Os projetos abertos são feitos com apoio de assistente de IA; o escopo, as decisões de arquitetura e as medições são meus, e revisei o resultado.
+
+## Em produção: Aira
+
+<p>
+<img src="./assets/selo-aira-producao-v1.svg" alt="" width="164" height="68">
+</p>
+
+**Aira**, produto de IA da Noron.dev, em produção na AWS desde maio/2026, em instância dedicada por cliente. Respondo pelo desenvolvimento e pela operação, como responsável técnico. Código fechado: os números abaixo vêm do repositório privado e da operação, e não podem ser conferidos num repositório público.
+
+- **Problema:** cada pessoa da empresa precisa perguntar, em português, sobre os arquivos da própria empresa e receber a resposta com a fonte, sem acesso ao que não tem permissão de ver.
+- **Decisão:** conduzi o desenho da IA com ferramentas só de leitura (recuperação agêntica), confinada às pastas que cada pessoa tem permissão de ver, com os arquivos consultados listados como fonte; e a avaliação das respostas antes de mudar prompt, modelo ou esforço.
+- **Resultado:** mais de 30 casos de avaliação em 7 categorias (dados fictícios, conferência determinística); fila, limite por minuto, cota mensal e teto de gasto no uso da IA; mais de 5.000 testes automatizados de back-end; trilha de auditoria encadeada por hash, que detecta adulteração; backup diário com cópia externa cifrada; mais de 60 versões publicadas.
+- **Stack:** Python/FastAPI · SvelteKit · PostgreSQL · Docker · AWS
 
 ## Engenharia de dados
 
 ### oss-lakehouse — lakehouse sobre dados reais do GitHub
 
 <p>
-<img src="./assets/selo-lakehouse-notebooks-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-lakehouse-testes-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-lakehouse-notebooks-v1.svg" alt="" width="169" height="68">
+<img src="./assets/selo-lakehouse-testes-v1.svg" alt="" width="164" height="68">
 </p>
 
 - **Problema:** aprender e mostrar engenharia de dados em Databricks sem depender de conta de nuvem, sobre dados reais.
@@ -35,9 +48,9 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 ### toll-analytics-platform — plataforma de dados de ponta a ponta
 
 <p>
-<img src="./assets/selo-toll-workflows-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-toll-duckdb-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-toll-databricks-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-toll-workflows-v1.svg" alt="" width="153" height="68">
+<img src="./assets/selo-toll-duckdb-v1.svg" alt="" width="123" height="68">
+<img src="./assets/selo-toll-databricks-v1.svg" alt="" width="168" height="68">
 </p>
 
 - **Problema:** construir do zero, com ferramentas abertas e dados sintéticos, uma plataforma de dados completa. O repositório não contém código, dado nem regra de empregador ou cliente.
@@ -46,26 +59,16 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 - **Stack:** dlt · dbt · Airflow com Cosmos · Soda · OpenLineage · Evidence.dev · Kafka (Redpanda) · Terraform
 - **Links:** [repositório do toll-analytics-platform](https://github.com/alanjoffre/toll-analytics-platform) · [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)
 
-```mermaid
-flowchart TB
-  SRC["CSV e eventos"] --> ING["dlt"]
-  ING --> LAND[("landing<br/>DuckDB (executado)<br/>Databricks (desenhado, sem apply)")]
-  LAND --> T["dbt<br/>Medallion · contracts<br/>Semantic Layer · Mesh"]
-  T --> DQ["Data Quality<br/>Soda · Elementary"]
-  T --> BI["BI<br/>Evidence.dev"]
-  ORCH["Airflow com Cosmos"] -.->|orquestra| ING
-  ORCH -.->|orquestra| T
-  OBS["OpenLineage<br/>Prometheus e Grafana"] -.->|observa| ORCH
-```
+<p><img src="./assets/diagrama-toll-v1.svg" alt="Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt e o dbt; OpenLineage, Prometheus e Grafana observam o Airflow." width="360" height="668"></p>
 
 ## Engenharia de IA
 
 ### RodoIA — engenharia de IA de ponta a ponta
 
 <p>
-<img src="./assets/selo-rodoia-f1-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-rodoia-hit5-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-rodoia-gate-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-rodoia-f1-v1.svg" alt="" width="159" height="68">
+<img src="./assets/selo-rodoia-hit5-v1.svg" alt="" width="122" height="68">
+<img src="./assets/selo-rodoia-gate-v1.svg" alt="" width="100" height="68">
 </p>
 
 - **Problema:** ir além de "chamar a API de um modelo": do backpropagation escrito à mão ao serving em produção, sobre a regulação e os dados abertos da ANTT.
@@ -76,36 +79,32 @@ flowchart TB
 
 O diferencial não são os números altos, e sim o rigor de corrigir os próprios números: o conjunto held-out desfez a memorização, o backtest desfez uma escolha a dedo e a auditoria humana encontrou 16% dos rótulos de referência errados.
 
-```mermaid
-flowchart TB
-  Q["Pergunta do usuário"] --> AG["Agente (LangGraph)<br/>guardrail → roteador<br/>→ síntese"]
-  AG --> RAG["RAG<br/>regulatório<br/>E5 + BM25<br/>+ RRF"]
-  AG --> FT["Modelo com<br/>fine-tuning<br/>QLoRA ·<br/>vLLM fp8"]
-  AG --> DADOS["Dados<br/>estruturados<br/>DuckDB ·<br/>previsão"]
-  RAG & FT & DADOS --> BASE["Fundamentos de ML<br/>backpropagation e<br/>attention à mão"]
-  MLOPS["MLOps: gate de CI<br/>MLflow · DVC<br/>drift · custo"] -.->|governa| AG
-```
+<p><img src="./assets/diagrama-rodoia-v1.svg" alt="Arquitetura do RodoIA, de cima para baixo: a pergunta do usuário chega ao agente (LangGraph), que passa por guardrail, roteador e síntese e aciona três frentes: RAG regulatório (E5, BM25 e RRF), modelo com fine-tuning (QLoRA e vLLM fp8) e dados estruturados (DuckDB e previsão). As três se apoiam nos fundamentos de ML, com backpropagation e attention escritos à mão. O MLOps (gate de CI, MLflow, DVC, drift e custo) governa o agente." width="360" height="492"></p>
 
 ### RodoQuery — Text-to-SQL sobre camada semântica
 
 <p>
-<img src="./assets/selo-rodoquery-exec-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-rodoquery-testes-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-rodoquery-exec-v2.svg" alt="" width="238" height="68">
+<img src="./assets/selo-rodoquery-testes-v1.svg" alt="" width="78" height="68">
 </p>
 
-- **Decisão:** o agente consulta a camada semântica (Semantic Layer) em vez de escrever SQL cru, com avaliação por execução e guardrails.
-- **Resultado:** 100% (IC 97,4 a 100) contra 44,5% do SQL direto, n=146, em dados reais da ANTT; 251 testes.
-- **Links:** [repositório do RodoQuery](https://github.com/alanjoffre/rodoquery)
+- **Problema:** um modelo que escreve SQL direto sobre dados governados devolve respostas plausíveis e erradas; o projeto mede quanto uma camada semântica corrige isso.
+- **Decisão:** o modelo não escreve SQL: escolhe métricas e dimensões de um vocabulário fechado (camada semântica, ou Semantic Layer, com MetricFlow), e quem gera o SQL é o MetricFlow. Fora do catálogo, o sistema se abstém. A avaliação é por execução: o resultado do SQL gerado é comparado com o do gabarito.
+- **Resultado:** em dados reais da ANTT (n=146 perguntas respondíveis), com modelo de ponta via API, 100% (IC 97,4 a 100) contra 44,5% do SQL direto; com modelo local de 7B, 89,7% contra 26,7%. O 100% é teto do instrumento: o teste saturou e não distingue sistemas melhores. A vantagem foi menor com o modelo mais forte (+55,5 pontos contra +63,0). 251 testes.
+- **Stack:** Python · MetricFlow (dbt) · DuckDB · FastAPI · Docker · Kubernetes
+- **Links:** [repositório do RodoQuery](https://github.com/alanjoffre/rodoquery) · [fundação de dados (dbt e MetricFlow sobre os dados da ANTT)](https://github.com/alanjoffre/antt-foundation)
 
 ### NãoConsta — RAG contratual avaliado pelo que recusa
 
 <p>
-<img src="./assets/selo-naoconsta-perguntas-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-naoconsta-semresposta-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-naoconsta-perguntas-v1.svg" alt="" width="202" height="68">
+<img src="./assets/selo-naoconsta-semresposta-v1.svg" alt="" width="186" height="68">
 </p>
 
-- **Decisão:** medir o agente pela capacidade de responder "não consta no contrato" quando a resposta não existe.
-- **Resultado:** benchmark CUAD com 510 contratos e 20.910 perguntas, 68% delas sem resposta no contrato.
+- **Problema:** um agente de contratos que sempre responde inventa quando a cláusula não existe.
+- **Decisão:** medir o agente pela capacidade de responder "não consta no contrato" quando a resposta não existe, e não só pelo acerto.
+- **Resultado:** benchmark CUAD com 510 contratos e 20.910 perguntas, 68% delas sem resposta no contrato. Em 200 consultas estratificadas, com modelo local de 7B e sem juiz de IA, o agente se absteve em 90% a 91% dos casos sem resposta e acertou 33% das perguntas com resposta (62% no total). 3 de 5 previsões minhas foram refutadas. O teste com um modelo mais capaz está em aberto, declarado no repositório. 68 testes.
+- **Stack:** Python · PostgreSQL (pgvector) · LangGraph · MCP · Ollama
 - **Links:** [repositório do NãoConsta](https://github.com/alanjoffre/naoconsta)
 
 ## Back-end em Java
@@ -113,9 +112,9 @@ flowchart TB
 ### Ledgerly Bank — banco digital fictício em Java
 
 <p>
-<img src="./assets/selo-ledgerly-saques-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-ledgerly-mutacao-v1.svg" alt="" width="68"" height="68">
-<img src="./assets/selo-ledgerly-testes-v1.svg" alt="" width="68"" height="68">
+<img src="./assets/selo-ledgerly-saques-v1.svg" alt="" width="254" height="68">
+<img src="./assets/selo-ledgerly-mutacao-v1.svg" alt="" width="178" height="68">
+<img src="./assets/selo-ledgerly-testes-v1.svg" alt="" width="97" height="68">
 </p>
 
 - **Problema:** mostrar back-end de sistema financeiro com consistência de saldo sob concorrência, construído do zero e em público.
@@ -123,18 +122,6 @@ flowchart TB
 - **Resultado:** saldo sem gasto duplo sob 1.500 saques simultâneos; 1.141 testes, 96,7% de mutação no domínio, 92,6% de cobertura e contratos com Pact; 47 ADRs (registros de decisão de arquitetura).
 - **Stack:** Java 25 · Spring Boot · Quarkus · Kafka · MongoDB · Keycloak · ONNX · React
 - **Links:** [repositório do Ledgerly Bank](https://github.com/alanjoffre/ledgerly-bank)
-
-## Em produção: Aira
-
-<p>
-<img src="./assets/selo-aira-producao-v1.svg" alt="" width="68"" height="68">
-</p>
-
-**Aira**, produto de IA da Noron.dev, em produção na AWS desde maio/2026. Sou o responsável técnico pelo desenvolvimento e pela operação. Código fechado.
-
-- **IA com permissão e fonte:** conduzi o desenho para que a IA consulte os arquivos da empresa só com ferramentas de leitura (recuperação agêntica), responda só com o que aquela pessoa tem permissão de ver e cite as fontes.
-- **Avaliação e custo:** respostas avaliadas (mais de 30 casos em 7 categorias, dados fictícios, conferência determinística) antes de mudar prompt, modelo ou esforço; fila, limite por minuto, cota mensal e teto de gasto que bloqueia ou passa ao modelo mais econômico.
-- **Operação:** Python/FastAPI e PostgreSQL em Docker na AWS; mais de 5.000 testes de back-end, trilha de auditoria encadeada por hash, backup diário cifrado (o deploy só segue com o backup externo confirmado) e mais de 60 versões publicadas.
 
 ## Trabalhos anteriores: machine learning
 
