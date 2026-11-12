@@ -59,7 +59,7 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 - **Stack:** dlt · dbt · Airflow com Cosmos · Soda · OpenLineage · Evidence.dev · Kafka (Redpanda) · Terraform
 - **Links:** [repositório do toll-analytics-platform](https://github.com/alanjoffre/toll-analytics-platform) · [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)
 
-<p><img src="./assets/diagrama-toll-v1.svg" alt="Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt e o dbt; OpenLineage, Prometheus e Grafana observam o Airflow." width="360" height="668"></p>
+<p><img src="./assets/diagrama-toll-v2.svg" alt="Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt, o dbt e o Soda; OpenLineage, Prometheus e Grafana observam o Airflow." width="360" height="668"></p>
 
 ## Engenharia de IA
 
@@ -79,7 +79,7 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 
 O diferencial não são os números altos, e sim o rigor de corrigir os próprios números: o conjunto held-out desfez a memorização, o backtest desfez uma escolha a dedo e a auditoria humana encontrou 16% dos rótulos de referência errados.
 
-<p><img src="./assets/diagrama-rodoia-v1.svg" alt="Arquitetura do RodoIA, de cima para baixo: a pergunta do usuário chega ao agente (LangGraph), que passa por guardrail, roteador e síntese e aciona três frentes: RAG regulatório (E5, BM25 e RRF), modelo com fine-tuning (QLoRA e vLLM fp8) e dados estruturados (DuckDB e previsão). As três se apoiam nos fundamentos de ML, com backpropagation e attention escritos à mão. O MLOps (gate de CI, MLflow, DVC, drift e custo) governa o agente." width="360" height="492"></p>
+<p><img src="./assets/diagrama-rodoia-v2.svg" alt="Arquitetura do RodoIA, de cima para baixo: a pergunta do usuário chega ao agente (LangGraph), que passa por guardrail e roteador, aciona as frentes que a pergunta exige (uma ou mais) e sintetiza a resposta. As frentes são: RAG regulatório (E5, BM25 e RRF), extração de entidades (NER) com modelo ajustado por fine-tuning (QLoRA, servido em vLLM fp8) e dados estruturados (DuckDB, com cálculo e agregação). Abaixo, a base de fundamentos de ML, com backpropagation e attention escritos à mão. O MLOps (gate de CI, MLflow, DVC, drift e custo) cobre todas as fases do projeto." width="360" height="492"></p>
 
 ### RodoQuery — Text-to-SQL sobre camada semântica
 

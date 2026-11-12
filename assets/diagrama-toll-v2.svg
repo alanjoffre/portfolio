@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 668" width="360" height="668" role="img" aria-label="Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt e o dbt; OpenLineage, Prometheus e Grafana observam o Airflow.">
-  <title>Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt e o dbt; OpenLineage, Prometheus e Grafana observam o Airflow.</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 668" width="360" height="668" role="img" aria-label="Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt, o dbt e o Soda; OpenLineage, Prometheus e Grafana observam o Airflow.">
+  <title>Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt, o dbt e o Soda; OpenLineage, Prometheus e Grafana observam o Airflow.</title>
   <defs>
     <clipPath id="canto"><rect width="360" height="668" rx="14"/></clipPath>
     <linearGradient id="marca" x1="0" x2="1" y1="0" y2="0">
@@ -34,7 +34,7 @@
     <text x="196" y="437" font-size="14" font-weight="400" fill="#b4bfd0" textLength="79.8" lengthAdjust="spacingAndGlyphs">Evidence.dev</text>
     <rect x="16" y="480" width="328" height="60" rx="10" fill="#161b22" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="6 4"/>
     <text x="26" y="505" font-size="14" font-weight="700" fill="#e6edf3" textLength="135.7" lengthAdjust="spacingAndGlyphs">Airflow com Cosmos</text>
-    <text x="26" y="525" font-size="14" font-weight="600" fill="#22d3ee" textLength="119.1" lengthAdjust="spacingAndGlyphs">orquestra dlt e dbt</text>
+    <text x="26" y="525" font-size="14" font-weight="600" fill="#22d3ee" textLength="158.0" lengthAdjust="spacingAndGlyphs">orquestra dlt, dbt e Soda</text>
     <rect x="16" y="568" width="328" height="80" rx="10" fill="#161b22" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="6 4"/>
     <text x="26" y="593" font-size="14" font-weight="700" fill="#e6edf3" textLength="86.3" lengthAdjust="spacingAndGlyphs">OpenLineage</text>
     <text x="26" y="613" font-size="14" font-weight="400" fill="#b4bfd0" textLength="137.3" lengthAdjust="spacingAndGlyphs">Prometheus e Grafana</text>
