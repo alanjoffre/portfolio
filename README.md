@@ -23,7 +23,7 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 <img src="./assets/selo-aira-producao-v1.svg" alt="" width="164" height="68">
 </p>
 
-**Aira**, produto de IA da Noron.dev, em produção na AWS desde maio/2026, em instância dedicada por cliente. Respondo pelo desenvolvimento e pela operação, como responsável técnico. Código fechado: os números abaixo vêm do repositório privado e da operação, e não podem ser conferidos num repositório público.
+**Aira**, produto de IA da Noron.dev, em produção na AWS desde maio/2026, em instância dedicada por cliente. Respondo pelo desenvolvimento e pela operação. Código fechado: os números abaixo vêm do repositório privado e da operação, e não podem ser conferidos num repositório público.
 
 - **Problema:** cada pessoa da empresa precisa perguntar, em português, sobre os arquivos da própria empresa e receber a resposta com a fonte, sem acesso ao que não tem permissão de ver.
 - **Decisão:** conduzi o desenho da IA com ferramentas só de leitura (recuperação agêntica), confinada às pastas que cada pessoa tem permissão de ver, com os arquivos consultados listados como fonte; e a avaliação das respostas antes de mudar prompt, modelo ou esforço.
