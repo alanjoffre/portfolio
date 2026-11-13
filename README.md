@@ -11,7 +11,7 @@
 
 ## Em 30 segundos
 
-- **Dados:** lakehouse em Databricks e dbt em cliente real, com o tempo de apuração reduzido de até 20 para 2 dias; aqui, a mesma abordagem (Medallion, dbt, qualidade de dados) em projetos open source com dados públicos ou sintéticos, com testes e CI.
+- **Dados:** lakehouse em Databricks e dbt em cliente real, com o tempo de apuração reduzido de até 20 para 2 dias; aqui, a mesma abordagem (Medallion, dbt, qualidade de dados) em projetos open source com dados públicos ou sintéticos, com testes e CI; e replicação por CDC (Debezium, Kafka, Delta Lake) com a cópia conferida depois de falhas injetadas.
 - **IA aplicada com avaliação:** RAG, fine-tuning e Text-to-SQL medidos com intervalo de confiança (IC) e avaliação como gate de CI.
 - **Back-end:** Python/FastAPI em produção na Aira, produto de IA da Noron.dev, e um banco digital fictício em Java com concorrência medida.
 
@@ -60,6 +60,20 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 - **Links:** [repositório do toll-analytics-platform](https://github.com/alanjoffre/toll-analytics-platform) · [dashboard ao vivo](https://alanjoffre.github.io/toll-analytics-platform/)
 
 <p><img src="./assets/diagrama-toll-v2.svg" alt="Fluxo de dados do toll-analytics-platform, de cima para baixo: CSV e eventos entram pelo dlt, caem na camada landing (DuckDB, executado; Databricks, desenhado, sem apply), passam pelo dbt (Medallion, contracts, Semantic Layer e Mesh) e seguem para Data Quality (Soda e Elementary) e BI (Evidence.dev). O Airflow com Cosmos orquestra o dlt, o dbt e o Soda; OpenLineage, Prometheus e Grafana observam o Airflow." width="360" height="668"></p>
+
+### pg-cdc-lakehouse — replicação por CDC conferida contra a origem
+
+<p>
+<img src="./assets/selo-cdc-cenarios-v1.svg" alt="" width="210" height="68">
+<img src="./assets/selo-cdc-colisoes-v1.svg" alt="" width="168" height="68">
+<img src="./assets/selo-cdc-testes-v1.svg" alt="" width="73" height="68">
+</p>
+
+- **Problema:** copiar um PostgreSQL para um lakehouse é fácil; provar que a cópia continua certa depois de uma falha, não. O projeto injeta falhas de verdade e confere a origem contra o destino.
+- **Decisão:** entrega *at-least-once* com estado final idempotente, e não *exactly-once*. Cada mudança tem identidade (tabela, chave, LSN), o consumidor só confirma o offset depois de gravar, e o MERGE no Delta Lake só avança (vale o maior LSN, o delete é lógico). 9 decisões registradas.
+- **Resultado:** em 4 cenários (operação normal, queda do consumidor, queda do Debezium com SIGKILL e 400 mensagens repetidas), a origem, o log em Parquet e a tabela Delta bateram em contagem, chaves, conteúdo e hash SHA-256, com 0 colisões de identidade. 20 testes e CI. Latência da mudança na origem à tabela Delta: p50 de 1,6 s numa máquina com Docker (não é benchmark). Limites no README: dado sintético, um broker, uma máquina.
+- **Stack:** PostgreSQL 17 · Debezium 3.7 · Kafka 4.3 (KRaft) · Python · Delta Lake (delta-rs) · DuckDB · GitHub Actions
+- **Links:** [repositório do pg-cdc-lakehouse](https://github.com/alanjoffre/pg-cdc-lakehouse) · [resultado dos cenários](https://github.com/alanjoffre/pg-cdc-lakehouse/blob/main/reports/cenarios.md) · [registro de decisões](https://github.com/alanjoffre/pg-cdc-lakehouse/blob/main/docs/decisoes.md)
 
 ## Engenharia de IA
 
