@@ -43,7 +43,7 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 - **Decisão:** o mesmo código roda localmente (PySpark e Delta Lake) e no Databricks (job em Declarative Automation Bundles, antes Databricks Asset Bundles). A infraestrutura Azure está em Terraform, verificada com `terraform validate`, sem `apply`.
 - **Resultado:** 18 notebooks executados, com o resultado na própria célula, e um pacote Python com mais de 180 testes e CI. Cobre ingestão incremental, MERGE e SCD2, Structured Streaming, modelagem dimensional, qualidade e contratos, performance no Spark com data skew real, governança e LGPD, e IA dentro do pipeline avaliada contra gabarito.
 - **Stack:** PySpark · Delta Lake · Databricks · Terraform · GitHub Actions
-- **Links:** [repositório do oss-lakehouse](https://github.com/alanjoffre/oss-lakehouse) · [guia de estudo com 199 perguntas respondidas](https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_DE_ESTUDO.md)
+- **Links:** [repositório do oss-lakehouse](https://github.com/alanjoffre/oss-lakehouse) · [guia técnico com 199 perguntas respondidas](https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_TECNICO.md)
 
 ### toll-analytics-platform — plataforma de dados de ponta a ponta
 
