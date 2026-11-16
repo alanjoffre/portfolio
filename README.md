@@ -15,7 +15,7 @@
 - **IA aplicada com avaliação:** RAG, fine-tuning e Text-to-SQL medidos com intervalo de confiança (IC) e avaliação como gate de CI.
 - **Back-end:** Python/FastAPI em produção na Aira, produto de IA da Noron.dev, e um banco digital fictício em Java com concorrência medida.
 
-Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o resultado medido e a stack; os projetos abertos trazem também os links. Nos projetos abertos, cada número vem de um teste ou de uma medição versionada no repositório; a Aira tem código fechado, e seus números vêm do repositório privado e da operação, não de repositório público. Os projetos abertos são feitos com apoio de assistente de IA; o escopo, as decisões de arquitetura e as medições são meus, e revisei o resultado.
+Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o resultado medido e a stack; os projetos abertos trazem também os links. Nos projetos abertos, cada número vem de um teste ou de uma medição versionada no repositório; a Aira tem código fechado, e seus números vêm do repositório privado e da operação, não de repositório público. Desenvolvo com assistente de IA no fluxo de trabalho, para ganhar velocidade; o que sustenta cada resultado está versionado no repositório do projeto.
 
 ## Em produção: Aira
 
