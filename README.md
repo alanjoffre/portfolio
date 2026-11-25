@@ -11,7 +11,7 @@
 
 ## Em 30 segundos
 
-- **Dados:** lakehouse em Databricks e dbt em cliente real, com o tempo de apuração reduzido de até 20 para 2 dias; aqui, a mesma abordagem (Medallion, dbt, qualidade de dados) em projetos open source com dados públicos ou sintéticos, com testes e CI; e replicação por CDC (Debezium, Kafka, Delta Lake) com a cópia conferida depois de falhas injetadas.
+- **Dados:** lakehouse em Databricks e dbt em cliente real, com o tempo de apuração reduzido de até 20 para 2 dias; aqui, a mesma abordagem (Medallion, dbt, qualidade de dados) em projetos open source com dados públicos ou sintéticos, com testes e CI; replicação por CDC (Debezium, Kafka, Delta Lake) com a cópia conferida depois de falhas injetadas; e carga incremental desenhada para Azure Data Factory e ADLS Gen2, validada localmente com dado real da CVM e não aplicada na Azure.
 - **IA aplicada com avaliação:** RAG, fine-tuning e Text-to-SQL medidos com intervalo de confiança (IC) e avaliação como gate de CI.
 - **Back-end:** Python/FastAPI em produção na Aira, produto de IA da Noron.dev, e um banco digital fictício em Java com concorrência medida.
 
@@ -74,6 +74,20 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 - **Resultado:** em 4 cenários (operação normal, queda do consumidor, queda do Debezium com SIGKILL e 400 mensagens repetidas), a origem, o log em Parquet e a tabela Delta bateram em contagem, chaves, conteúdo e hash SHA-256, com 0 colisões de identidade. 20 testes e CI. Latência da mudança na origem à tabela Delta: p50 de 1,6 s numa máquina com Docker (não é benchmark). Limites no README: dado sintético, um broker, uma máquina.
 - **Stack:** PostgreSQL 17 · Debezium 3.7 · Kafka 4.3 (KRaft) · Python · Delta Lake (delta-rs) · DuckDB · GitHub Actions
 - **Links:** [repositório do pg-cdc-lakehouse](https://github.com/alanjoffre/pg-cdc-lakehouse) · [resultado dos cenários](https://github.com/alanjoffre/pg-cdc-lakehouse/blob/main/reports/cenarios.md) · [registro de decisões](https://github.com/alanjoffre/pg-cdc-lakehouse/blob/main/docs/decisoes.md)
+
+### cvm-azure-data-lake — carga incremental de uma fonte que reescreve o passado
+
+<p>
+<img src="./assets/selo-cvm-checagens-v1.svg" alt="" width="209" height="68">
+<img src="./assets/selo-cvm-regravacao-v1.svg" alt="" width="195" height="68">
+<img src="./assets/selo-cvm-testes-v1.svg" alt="" width="78" height="68">
+</p>
+
+- **Problema:** o Informe Diário de fundos da CVM regrava todo dia o mês corrente e o anterior, e toda semana os dez meses antes deles. Carregar só o mês novo deixa o lake errado sem nenhum erro aparecer: em 21/11/2026, a CVM regravou setembro com 95 linhas a mais (538.663 → 538.758).
+- **Decisão:** janela de reprocessamento (*lookback window*) no lugar de watermark, com gatilhos diário e semanal no Azure Data Factory. Cada carga substitui o mês inteiro na prata (ADLS Gen2, em bronze, prata e ouro), só depois de validado contra a bronze por contagem e SHA-256 canônico, numa Azure Function com DuckDB. Reexecutar dá o mesmo resultado (carga idempotente), e a linha que a fonte removeu some do destino. 13 decisões registradas.
+- **Resultado:** com os arquivos reais de 3 meses da CVM (set., out. e nov./2026), 32/32 checagens. A reexecução não mudou nada. Na republicação simulada, só o mês republicado mudou, conferido por contagem e SHA-256, com cada linha alterada, removida e incluída checada na prata. Uma divergência injetada foi barrada pela validação, e a prata ficou intacta. 107 testes em Python e 16 do Terraform com provider simulado, com CI. Limites no README: desenho de referência, validado localmente; não aplicado na Azure; republicação simulada; o tipo que o Copy grava no Parquet só se confirma na Azure.
+- **Stack:** Azure Data Factory · ADLS Gen2 · Azure Functions · DuckDB · Python · Key Vault · Terraform · Azure Pipelines · GitHub Actions
+- **Links:** [repositório do cvm-azure-data-lake](https://github.com/alanjoffre/cvm-azure-data-lake) · [relatório da prova](https://github.com/alanjoffre/cvm-azure-data-lake/blob/main/reports/prova.md) · [registro de decisões](https://github.com/alanjoffre/cvm-azure-data-lake/blob/main/docs/decisoes.md)
 
 ## Engenharia de IA
 
