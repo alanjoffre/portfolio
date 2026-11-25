@@ -99,7 +99,7 @@ Cada projeto abaixo segue o mesmo molde: o problema, a decisão principal, o res
 <img src="./assets/selo-rodoia-gate-v1.svg" alt="" width="100" height="68">
 </p>
 
-- **Problema:** ir além de "chamar a API de um modelo": do backpropagation escrito à mão ao serving em produção, sobre a regulação e os dados abertos da ANTT.
+- **Problema:** ir além de "chamar a API de um modelo": do backpropagation escrito à mão ao serving com vLLM, sobre a regulação e os dados abertos da ANTT.
 - **Decisão:** motor de dados escolhido por benchmark (DuckDB 6,7 vezes mais rápido que o Spark, sem divergências) e avaliação como gate de CI, que barra a entrega quando a qualidade cai.
 - **Resultado:** RAG com hit@5 de 0,62 (IC 0,48 a 0,74) e precisão de citação de 0,92; fine-tuning QLoRA em NER jurídico (reconhecimento de entidades) com F1 de 0,13 para 0,77, servido com vLLM a 205 tokens/s; agente em LangGraph com roteamento de 0,95 (n=21); gate 30/30 e 302 testes (285 no CI).
 - **Stack:** PyTorch · Hugging Face · Qdrant · LangGraph · vLLM · DuckDB · MLflow · DVC
